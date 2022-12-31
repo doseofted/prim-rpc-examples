@@ -8,7 +8,15 @@ importers:
     devDependencies:
       prettier: 2.8.1
 
-  examples/advanced/02-client-server:
+  examples/01-simple-test:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+    dependencies:
+      '@doseofted/prim-rpc': link:../../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
+
+  examples/02-client-server:
     specifiers:
       '@doseofted/prim-rpc': workspace:*
       '@doseofted/prim-rpc-plugins': workspace:*
@@ -23,8 +31,8 @@ importers:
       ws: ^8.11.0
       zx: ^7.1.1
     dependencies:
-      '@doseofted/prim-rpc': link:../../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../../temp-build/plugins
+      '@doseofted/prim-rpc': link:../../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
       '@fastify/cors': 8.2.0
       fastify: 4.10.2
       ws: 8.11.0
@@ -36,14 +44,6 @@ importers:
       vite: 4.0.3
       vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
       zx: 7.1.1
-
-  examples/simple/01-simple-test:
-    specifiers:
-      '@doseofted/prim-rpc': workspace:*
-      '@doseofted/prim-rpc-plugins': workspace:*
-    dependencies:
-      '@doseofted/prim-rpc': link:../../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../../temp-build/plugins
 
   temp-build/plugins:
     specifiers:

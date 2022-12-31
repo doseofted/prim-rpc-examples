@@ -1,4 +1,3 @@
 packages:
-  - "examples/simple/**"
-  - "examples/advanced/**"
+  - "examples/**"
   - "temp-build/**"

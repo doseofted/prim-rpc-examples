@@ -15,10 +15,9 @@ The client (contained in [`client.ts`](./client.tsx)) is a
 [Vite](https://github.com/vitejs/vite). It utilizes the Prim+RPC client and uses
 the browser's Fetch and WebSocket API to connect to the server.
 
-You can start both the client and server by running the "start" helper script:
+You can start both the server and client in development mode by running the
+"start" helper script:
 
 ```zsh
-corepack enable
-pnpm install
 pnpm start
 ```
