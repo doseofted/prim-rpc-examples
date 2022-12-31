@@ -2,8 +2,8 @@
 
 Examples of Prim+RPC usage:
 
-- [Simple](./examples/simple)
-- [Test](./examples/)
+- [Simple Testing](./examples/01-simple-test/)
+- [Client / Server Example](./examples/02-client-server/)
 
 You can install dependencies in all examples by running the following commands:
 
