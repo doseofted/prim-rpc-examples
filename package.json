@@ -9,5 +9,11 @@
 	"version": "0.0.1",
 	"packageManager": "pnpm@7.14.2",
 	"license": "UNLICENSED",
-	"private": true
+	"private": true,
+	"scripts": {
+		"format": "npx prettier --write ."
+	},
+	"devDependencies": {
+		"prettier": "^2.8.1"
+	}
 }
