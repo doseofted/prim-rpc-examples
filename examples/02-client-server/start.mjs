@@ -1,4 +1,5 @@
 #!/usr/bin/env zx
+// NOTE: this is just a helper script to start server and client at the same time
 import { $, echo, chalk as c } from "zx"
 
 echo`${c.green`Client`} available at ${c.green`http://prim.localhost:3000`}`
