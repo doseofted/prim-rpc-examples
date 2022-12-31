@@ -14,7 +14,7 @@ import { createResource } from "solid-js"
 import { render } from "solid-js/web"
 // Setup the Prim+RPC client and give it the endpoint of the configured server
 const backend = createPrimClient<typeof module>({
-	endpoint: "http://[::1]:3001/prim",
+	endpoint: "http://[::1]:3001/",
 	methodPlugin: createMethodPlugin(),
 	callbackPlugin: createCallbackPlugin(),
 })

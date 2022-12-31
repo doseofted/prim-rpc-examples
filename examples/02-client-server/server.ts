@@ -24,6 +24,7 @@ const wss = new WebSocketServer({ server: fastify.server })
 await fastify.register(cors)
 // Now create the Prim+RPC with the configured module and plugins for our servers
 createPrimServer({
+	prefix: "/",
 	module: { sayHello },
 	methodHandler: createMethodHandler({ fastify }),
 	callbackHandler: createCallbackHandler({ wss }),
