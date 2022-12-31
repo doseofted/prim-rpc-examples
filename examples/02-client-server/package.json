@@ -7,7 +7,7 @@
 	"scripts": {
 		"serve": "tsx watch --clear-screen=false server.ts",
 		"client": "vite dev",
-		"start": "zx start.mjs"
+		"start": "zx start.js"
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "workspace:*",
