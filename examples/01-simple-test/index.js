@@ -23,8 +23,7 @@ function sayHello(x, y) {
 sayHello.rpc = true
 
 // Let's call our function so we know what to expect.
-const expected = sayHello("Backend", "Frontend")
-// expected === "Backend, meet Frontend."
+const expected = sayHello("Backend", "Frontend") // expected === "Backend, meet Frontend."
 
 // We'll create a module that will hold this function to be used directly with Prim+RPC
 // (this could be imported from somewhere else but we'll use the function we just defined)
