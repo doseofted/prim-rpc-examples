@@ -53,6 +53,23 @@ importers:
       vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
       zx: 7.1.1
 
+  examples/03-web-worker:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+      solid-js: ^1.6.6
+      typescript: ^4.9.4
+      vite: ^4.0.3
+      vite-plugin-solid: ^2.5.0
+    dependencies:
+      '@doseofted/prim-rpc': link:../../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
+    devDependencies:
+      solid-js: 1.6.6
+      typescript: 4.9.4
+      vite: 4.0.3
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
+
   temp-build/plugins:
     specifiers:
       '@doseofted/prim-rpc': workspace:*
@@ -65,7 +82,9 @@ importers:
       axios: ^1.2.1
       express: ^4.18.2
       fastify: ^4.10.2
+      mitt: ^3.0.0
       multer: 1.4.5-lts.1
+      nanoid: ^4.0.0
       query-string: ^8.0.3
       socket.io: ^4.5.4
       socket.io-client: ^4.5.4
@@ -73,6 +92,9 @@ importers:
       supertest: ^6.3.3
       superwstest: ^2.0.3
       ws: ^8.11.0
+    dependencies:
+      mitt: 3.0.0
+      nanoid: 4.0.0
     devDependencies:
       '@doseofted/prim-rpc': link:../rpc
       '@fastify/multipart': 7.3.0
@@ -114,11 +136,11 @@ importers:
       proxy-deep: 3.1.1
       query-string: 8.1.0
       serialize-error: 11.0.0
+      type-fest: 3.5.0
     devDependencies:
       '@types/lodash-es': 4.17.6
       '@types/node': 18.11.18
       superjson: 1.12.1
-      type-fest: 3.5.0
 
 packages:
 
@@ -3422,7 +3444,7 @@ packages:
   /type-fest/3.5.0:
     resolution: {integrity: sha512-bI3zRmZC8K0tUz1HjbIOAGQwR2CoPQG68N5IF7gm0LBl8QSNXzkmaWnkWccCUL5uG9mCsp4sBwC8SBrNSISWew==}
     engines: {node: '>=14.16'}
-    dev: true
+    dev: false
 
   /type-is/1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}

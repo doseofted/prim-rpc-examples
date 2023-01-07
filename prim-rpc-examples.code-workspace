@@ -11,6 +11,10 @@
 		{
 			"name": "Client/Server",
 			"path": "./examples/02-client-server"
+		},
+		{
+			"name": "Web Worker",
+			"path": "./examples/03-web-worker"
 		}
 	],
 	"settings": {
