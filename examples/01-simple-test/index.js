@@ -4,30 +4,13 @@ import {
 	createPrimServer,
 	testing,
 } from "@doseofted/prim-rpc"
+// now import your JavaScript code (or inline it into this file, if you like)
+import * as module from "./hello"
 
 // SECTION: start server code
 
-/**
- * Define any kind of function to be used with Prim+RPC.
- * This function is used from the server and will just say hello.
- *
- * @param {string} x
- * @param {string} y
- * @returns a nice greeting
- */
-function sayHello(x, y) {
-	return `${x}, meet ${y}.`
-}
-
-// We'll assign an "rpc" property to the function so Prim+RPC knows it's safe to call this function
-sayHello.rpc = true
-
 // Let's call our function so we know what to expect.
-const expected = sayHello("Backend", "Frontend") // expected === "Backend, meet Frontend."
-
-// We'll create a module that will hold this function to be used directly with Prim+RPC
-// (this could be imported from somewhere else but we'll use the function we just defined)
-const module = { sayHello }
+const expected = module.sayHello("Backend", "Frontend") // expected === "Backend, meet Frontend."
 
 // Let's create Prim+RPC plugins so the server and client can communicate with each other
 const plugins = testing.createPrimTestingPlugins()

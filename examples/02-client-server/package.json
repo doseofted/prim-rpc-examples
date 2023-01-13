@@ -5,7 +5,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"serve": "tsx watch --clear-screen=false server.ts",
+		"serve": "tsx watch --clear-screen=false server/index.ts",
 		"client": "vite dev",
 		"start": "zx start.js"
 	},
