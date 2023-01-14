@@ -26,13 +26,13 @@ const backend = createPrimClient<typeof module>({
 // App is the root component used by Solid. The return value will become HTML.
 function App() {
 	// Make a function call using Prim+RPC (`createResource` is Solid's way of handling returned promise)
-	const [joinedChat] = createResource(async () =>
-		backend.joinChat("hi", (message) => {
-			backend.chat("Hi!")
-		})
-	)
+	const [greeting] = createResource(async () => {
+		const greeting = await backend.sayHello("Backend", "Frontend")
+		console.log(greeting)
+		return greeting
+	})
 	// Check if promise has resolved (loading === false) and then display returned value
-	return <p>{!joinedChat.loading && joinedChat()}</p>
+	return <p>{!greeting.loading && greeting()}</p>
 }
 
 // Render Solid app to HTML given in #root of index.html
