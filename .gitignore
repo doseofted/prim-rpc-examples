@@ -1,3 +1,4 @@
 /temp-build/rpc/*
 /temp-build/plugins/*
 node_modules
+dist

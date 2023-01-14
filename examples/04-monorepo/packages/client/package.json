@@ -1,0 +1,19 @@
+{
+	"name": "monorepo-client",
+	"version": "0.0.1",
+	"license": "UNLICENSED",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev"
+	},
+	"devDependencies": {
+		"@doseofted/prim-rpc": "workspace:*",
+		"@doseofted/prim-rpc-plugins": "workspace:*",
+		"monorepo-module": "workspace:*",
+		"solid-js": "^1.6.6",
+		"typescript": "^4.9.4",
+		"vite": "^4.0.3",
+		"vite-plugin-solid": "^2.5.0"
+	}
+}

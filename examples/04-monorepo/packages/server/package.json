@@ -1,0 +1,25 @@
+{
+	"name": "client-server",
+	"version": "0.0.1",
+	"license": "UNLICENSED",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"serve": "tsx watch --clear-screen=false server/index.ts",
+		"client": "vite dev",
+		"start": "zx start.js"
+	},
+	"dependencies": {
+		"@doseofted/prim-rpc": "workspace:*",
+		"@doseofted/prim-rpc-plugins": "workspace:*",
+		"monorepo-module": "workspace:*",
+		"@fastify/cors": "^8.2.0",
+		"fastify": "^4.10.2",
+		"ws": "^8.11.0"
+	},
+	"devDependencies": {
+		"@types/ws": "^8.5.3",
+		"tsx": "^3.12.1",
+		"typescript": "^4.9.4"
+	}
+}
