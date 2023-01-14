@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@doseofted/prim-rpc": "workspace:*",
 		"@doseofted/prim-rpc-plugins": "workspace:*",
+		"@doseofted/prim-rpc-tooling": "workspace:*",
 		"@fastify/cors": "^8.2.0",
 		"fastify": "^4.10.2",
 		"ws": "^8.11.0"
