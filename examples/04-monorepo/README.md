@@ -1,7 +1,7 @@
 # Monorepo Example
 
 In this example, a web server and web browser are bridged with Prim+RPC. This is
-very similar to the [Client /Server Example](../02-client-server) except that
+very similar to the [Client / Server Example](../02-client-server) except that
 this example splits the client, server, and module into separate packages in a
 monolithic repository (monorepo).
 
