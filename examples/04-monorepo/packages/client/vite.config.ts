@@ -8,6 +8,6 @@ export default defineConfig({
 	server: { port: 3000 },
 	plugins: [
 		solidPlugin(),
-		preventImport.vite({ name: path.join(__dirname, "server") }),
+		preventImport.vite({ name: path.join(__dirname, "..", "module") }),
 	],
 })
