@@ -7,5 +7,5 @@ monolithic repository (monorepo).
 
 See the [Client /Server Example](../02-client-server) to understand how the
 client and server packages are configured. The "module" package is simply a
-JavaScript module and is used directly by the server while its type definitions
-are used by the client.
+plain JavaScript module and is used directly by the server while its type
+definitions are used by the client.

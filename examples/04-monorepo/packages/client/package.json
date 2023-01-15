@@ -5,7 +5,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev"
+		"start": "vite dev"
 	},
 	"devDependencies": {
 		"@doseofted/prim-rpc": "workspace:*",
