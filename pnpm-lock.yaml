@@ -127,6 +127,39 @@ importers:
       tsx: 3.12.1
       typescript: 4.9.4
 
+  examples/05-custom-handler:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+      '@doseofted/prim-rpc-tooling': workspace:*
+      '@fastify/cors': ^8.2.0
+      '@types/ws': ^8.5.3
+      fastify: ^4.10.2
+      solid-js: ^1.6.6
+      tsx: ^3.12.1
+      typescript: ^4.9.4
+      vite: ^4.0.3
+      vite-plugin-solid: ^2.5.0
+      ws: ^8.11.0
+      yaml: ^2.2.1
+      zx: ^7.1.1
+    dependencies:
+      '@doseofted/prim-rpc': link:../../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
+      '@doseofted/prim-rpc-tooling': link:../../temp-build/tooling
+      '@fastify/cors': 8.2.0
+      fastify: 4.10.2
+      ws: 8.11.0
+      yaml: 2.2.1
+    devDependencies:
+      '@types/ws': 8.5.3
+      solid-js: 1.6.6
+      tsx: 3.12.1
+      typescript: 4.9.4
+      vite: 4.0.3
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
+      zx: 7.1.1
+
   temp-build/plugins:
     specifiers:
       '@doseofted/prim-rpc': workspace:*
@@ -4156,7 +4189,6 @@ packages:
   /yaml/2.2.1:
     resolution: {integrity: sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==}
     engines: {node: '>= 14'}
-    dev: true
 
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
