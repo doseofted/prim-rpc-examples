@@ -6,6 +6,7 @@ Examples of Prim+RPC usage:
 - [Client/Server Example](./examples/02-client-server/)
 - [Web Worker](./examples/03-web-worker)
 - [Monorepo Setup](./examples/04-monorepo)
+- [Custom JSON Handler](./examples/05-custom-handler)
 - Fullstack Framework[^1]
 - Electron IPC[^1]
 
