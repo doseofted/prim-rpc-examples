@@ -2,7 +2,7 @@
 
 In this example, a web server and web browser are bridged with Prim+RPC.
 
-The web server ([`server.ts`](./server/index.ts)) is pre-configured to use
+The web server ([`server/index.ts`](./server/index.ts)) is pre-configured to use
 [Fastify](https://github.com/fastify/fastify) and
 [WS Server](https://github.com/websockets/ws) for HTTP and WebSocket connections
 respectively (you don't need to be familiar with either to use this example).

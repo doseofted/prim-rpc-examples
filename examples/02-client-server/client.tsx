@@ -28,7 +28,7 @@ function App() {
 	// Make a function call using Prim+RPC (`createResource` is Solid's way of handling returned promise)
 	const [greeting] = createResource(async () => {
 		const greeting = await backend.sayHello("Backend", "Frontend")
-		console.log(greeting)
+		console.log(greeting) // we can log result to see the result is just a string
 		return greeting
 	})
 	// Check if promise has resolved (loading === false) and then display returned value
