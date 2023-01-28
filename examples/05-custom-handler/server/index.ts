@@ -18,9 +18,11 @@ import cors from "cors"
 // import custom JSON handler
 import yaml from "yaml"
 
+// create a JSON handler that has parse and stringify methods
 const jsonHandler: JsonHandler = {
 	parse: yaml.parse,
 	stringify: yaml.stringify,
+	// mediaType is optional and is used to set HTTP headers in plugins
 	mediaType: "application/yaml",
 }
 

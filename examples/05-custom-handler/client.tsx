@@ -19,9 +19,11 @@ import yaml from "yaml"
 import { createResource } from "solid-js"
 import { render } from "solid-js/web"
 
+// create a JSON handler that has parse and stringify methods
 const jsonHandler: JsonHandler = {
 	parse: yaml.parse,
 	stringify: yaml.stringify,
+	// mediaType is optional and is used to set HTTP headers in plugins
 	mediaType: "application/yaml",
 }
 
