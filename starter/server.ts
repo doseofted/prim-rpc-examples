@@ -11,9 +11,16 @@ if (process.env.npm_lifecycle_event === "start") {
 	await fastify.register(staticHost, { root })
 }
 
-fastify.get("/api", () => "Hello from server!")
+function sayHello() {
+	return "Hello from server!"
+}
 
-// NOTE: Prim+RPC server setup here
+fastify.get("/api", (request, reply) => {
+	const message = sayHello()
+	reply.send(message)
+})
+
+// NOTE: Prim+RPC server setup will go here
 
 const address = await fastify.listen({ port: 3001 })
 console.log("Server available at", address)

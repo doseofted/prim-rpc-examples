@@ -1,10 +1,14 @@
-// NOTE: Prim+RPC client setup here
+import { createResource } from "solid-js"
+import { render } from "solid-js/web"
+import html from "solid-js/html"
 
-const result = await fetch("http://[::1]:3001/api")
-console.log(await result.text())
+// NOTE: Prim+RPC client setup will go here
 
-const p = document.createElement("p")
-p.innerText = "Hello from client!"
-document.getElementById("root")?.appendChild(p)
+async function fetchHello() {
+	const message = await fetch("http://[::1]:3001/api").then((r) => r.text())
+	console.log("Message:", message)
+	return message
+}
 
-export {}
+const [message] = createResource(fetchHello)
+render(() => html`<p>${() => message()}</p>`, document.body)

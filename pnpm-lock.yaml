@@ -170,6 +170,7 @@ importers:
       '@fastify/static': ^6.7.0
       concurrently: ^7.6.0
       fastify: ^4.10.2
+      solid-js: ^1.6.6
       tsx: ^3.12.1
       typescript: ^4.9.4
       vite: ^4.0.3
@@ -180,6 +181,7 @@ importers:
       tsx: 3.12.1
     devDependencies:
       concurrently: 7.6.0
+      solid-js: 1.6.6
       typescript: 4.9.4
       vite: 4.0.3
 
