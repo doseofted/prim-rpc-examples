@@ -11,14 +11,18 @@ if (process.env.npm_lifecycle_event === "start") {
 	await fastify.register(staticHost, { root })
 }
 
-function sayHello() {
-	return "Hello from server!"
+export function sayHello(x: string, y: string) {
+	return `${x}, meet ${y}.`
 }
 
-fastify.get("/api", (request, reply) => {
-	const message = sayHello()
-	reply.send(message)
-})
+fastify.get<{ Querystring: { x: string; y: string } }>(
+	"/api",
+	(request, reply) => {
+		const { x, y } = request.query
+		const message = sayHello(x, y)
+		reply.send(message)
+	}
+)
 
 // NOTE: Prim+RPC server setup will go here
 

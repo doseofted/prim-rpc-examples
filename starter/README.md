@@ -11,6 +11,9 @@ the [Solid](https://github.com/solidjs/solid) framework. These frameworks are
 chosen only to reduce boilerplate code so that we can instead focus on Prim+RPC
 setup.
 
+- [`server.ts`](./server.ts) is the web server
+- [`client.ts`](./client.ts) is the website client
+
 The website requests a message from the web server by using the Fetch API which
 makes an HTTP request to the web server which in turn will call `sayHello()` on
 the server.

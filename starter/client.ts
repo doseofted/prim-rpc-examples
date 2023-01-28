@@ -5,7 +5,9 @@ import html from "solid-js/html"
 // NOTE: Prim+RPC client setup will go here
 
 async function fetchHello() {
-	const message = await fetch("http://[::1]:3001/api").then((r) => r.text())
+	const message = await fetch(
+		"http://[::1]:3001/api?x=Frontend&y=Backend"
+	).then((r) => r.text())
 	console.log("Message:", message)
 	return message
 }
