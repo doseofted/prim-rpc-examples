@@ -8,7 +8,9 @@
 	"scripts": {
 		"dev:server": "tsx watch --clear-screen=false server.ts",
 		"dev:client": "vite --port 3000",
-		"dev": "concurrently \"npm:dev:*\""
+		"dev": "concurrently \"npm:dev:*\"",
+		"build": "vite build --target=esnext",
+		"start": "tsx server.ts"
 	},
 	"devDependencies": {
 		"concurrently": "^7.6.0",
@@ -17,6 +19,7 @@
 	},
 	"dependencies": {
 		"@fastify/cors": "^8.2.0",
+		"@fastify/static": "^6.7.0",
 		"fastify": "^4.10.2",
 		"tsx": "^3.12.1"
 	}

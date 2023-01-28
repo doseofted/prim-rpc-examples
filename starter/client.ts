@@ -1,6 +1,6 @@
 // NOTE: Prim+RPC client setup here
 
-const result = await fetch("http://[::1]:3001")
+const result = await fetch("http://[::1]:3001/api")
 console.log(await result.text())
 
 const p = document.createElement("p")
