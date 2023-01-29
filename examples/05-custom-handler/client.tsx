@@ -7,7 +7,7 @@ import { createPrimClient, JsonHandler } from "@doseofted/prim-rpc"
 import {
 	createMethodPlugin,
 	createCallbackPlugin,
-} from "@doseofted/prim-rpc-plugins/browser-api"
+} from "@doseofted/prim-rpc-plugins/browser"
 
 // Import the module type from the server (use `import type` to import types only)
 import type { module } from "./server"

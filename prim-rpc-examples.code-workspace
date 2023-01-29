@@ -25,6 +25,10 @@
 			"path": "./examples/05-custom-handler"
 		},
 		{
+			"name": "Server Context",
+			"path": "./examples/06-server-context"
+		},
+		{
 			"name": "Starter Tutorial",
 			"path": "./starter"
 		}

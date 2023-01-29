@@ -164,6 +164,39 @@ importers:
       vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
       zx: 7.1.1
 
+  examples/06-server-context:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+      '@doseofted/prim-rpc-tooling': workspace:*
+      '@fastify/cookie': ^8.3.0
+      '@fastify/cors': ^8.2.0
+      '@types/ws': ^8.5.3
+      fastify: ^4.10.2
+      solid-js: ^1.6.6
+      tsx: ^3.12.1
+      typescript: ^4.9.4
+      vite: ^4.0.3
+      vite-plugin-solid: ^2.5.0
+      ws: ^8.11.0
+      zx: ^7.1.1
+    dependencies:
+      '@doseofted/prim-rpc': link:../../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
+      '@doseofted/prim-rpc-tooling': link:../../temp-build/tooling
+      '@fastify/cookie': 8.3.0
+      '@fastify/cors': 8.2.0
+      fastify: 4.10.2
+      ws: 8.11.0
+    devDependencies:
+      '@types/ws': 8.5.3
+      solid-js: 1.6.6
+      tsx: 3.12.1
+      typescript: 4.9.4
+      vite: 4.0.3
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
+      zx: 7.1.1
+
   starter:
     specifiers:
       '@fastify/cors': ^8.2.0
@@ -866,6 +899,13 @@ packages:
     dependencies:
       text-decoding: 1.0.0
     dev: true
+
+  /@fastify/cookie/8.3.0:
+    resolution: {integrity: sha512-P9hY9GO11L20TnZ33XN3i0bt+3x0zaT7S0ohAzWO950E9PB2xnNhLYzPFJIGFi5AVN0yr5+/iZhWxeYvR6KCzg==}
+    dependencies:
+      cookie: 0.5.0
+      fastify-plugin: 4.4.0
+    dev: false
 
   /@fastify/cors/8.2.0:
     resolution: {integrity: sha512-qDgwpmg6C4D0D3nh8MTMuRXWyEwPnDZDBODaJv90FP2o9ukbahJByW4FtrM5Bpod5KbTf1oIExBmpItbUTQmHg==}
