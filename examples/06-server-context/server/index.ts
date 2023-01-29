@@ -31,7 +31,8 @@ await fastify.register(cookie)
 const methodHandler = createMethodHandler({
 	fastify,
 	// For every request, transform the context into a format that Prim+RPC functions expect
-	contextTransform(request, reply): module.Auth {
+	// We'll gather the cookie that we need and create a way to easily set it from our functions
+	contextTransform(request, reply): module.SimpleFastifyContext {
 		return {
 			user: request.cookies.name,
 			setUser(user) {
