@@ -29,9 +29,13 @@
 			"path": "./examples/06-server-context"
 		},
 		{
-			"name": "Starter Tutorial",
-			"path": "./starter"
+			"name": "Fullstack Framework",
+			"path": "./examples/07-fullstack-framework"
 		}
+		// {
+		// 	"name": "Starter Tutorial",
+		// 	"path": "./starter"
+		// }
 	],
 	"settings": {
 		"editor.formatOnSave": true,

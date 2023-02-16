@@ -8,7 +8,7 @@ Examples of Prim+RPC usage:
 - [Monorepo Setup](./examples/04-monorepo)
 - [Custom JSON Handler](./examples/05-custom-handler)
 - [Server Context](./examples/06-server-context)
-- Fullstack Framework[^1]
+- [Fullstack Framework](./examples/07-fullstack-framework)
 - Electron IPC[^1]
 
 You can install dependencies in all examples by running the following commands:

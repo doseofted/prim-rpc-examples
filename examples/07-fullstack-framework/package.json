@@ -1,0 +1,20 @@
+{
+	"name": "fullstack-framework",
+	"version": "0.0.1",
+	"license": "UNLICENSED",
+	"private": true,
+	"scripts": {
+		"start": "nuxt dev",
+		"dev": "nuxt dev",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"nuxt": "^3.2.0",
+		"@doseofted/prim-rpc": "workspace:*",
+		"@doseofted/prim-rpc-plugins": "workspace:*",
+		"@doseofted/prim-rpc-tooling": "workspace:*"
+	}
+}
