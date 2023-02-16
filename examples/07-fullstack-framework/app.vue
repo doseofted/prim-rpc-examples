@@ -2,7 +2,7 @@
   <p v-if="!pending">
     <!-- Check if promise has resolved (pending === false) and then display returned value -->
     {{ greeting }}
-</p>
+  </p>
 </template>
 
 <script lang="ts" setup>
