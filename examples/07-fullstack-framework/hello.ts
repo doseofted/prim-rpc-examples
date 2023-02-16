@@ -9,6 +9,5 @@ function sayHello(x: string, y: string) {
 // Ensure function is exposed to client by adding the `.rpc` property
 sayHello.rpc = true
 
-// NOTE: Using default export with Nuxt since `import * as module from "@/hello.ts"`
-// results in error when used with Prim+RPC
+// NOTE: namespace import of this file fails with Nuxt/Prim+RPC so we need to use default import
 export default { sayHello }
