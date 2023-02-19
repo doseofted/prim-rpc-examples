@@ -22,8 +22,9 @@ promise (and refetch if given references change).
 > (using a WebSocket connection) isn't supported directly with Nuxt yet but it
 > is intended to be added in the future.
 
-You can start this example using the following command:
+You can start this example using the following commands:
 
 ```zsh
+pnpm install
 pnpm start
 ```

@@ -10,5 +10,6 @@ server.
 To start this example, run:
 
 ```zsh
+pnpm install
 pnpm start
 ```

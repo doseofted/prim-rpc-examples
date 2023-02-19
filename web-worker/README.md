@@ -21,5 +21,6 @@ The application ([`index.ts`](./index.tsx)) is a
 either to use this example).
 
 ```zsh
+pnpm install
 pnpm start
 ```
