@@ -1,9 +1,9 @@
 # Custom JSON Handler Example
 
 In this example, a web server and web browser are bridged with Prim+RPC. This is
-very similar to the [Client / Server Example](../02-client-server) except that
-this example uses YAML in place of the default JSON handler. This examples also
-uses Express in place of Fastify as a server framework.
+very similar to the [Client / Server Example](../client-server) except that this
+example uses YAML in place of the default JSON handler. This examples also uses
+Express in place of Fastify as a server framework.
 
 You may try to experiment with other JSON handlers like
 [`superjson`](https://github.com/blitz-js/superjson),

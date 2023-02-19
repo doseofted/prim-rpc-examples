@@ -1,7 +1,7 @@
 # Server Context Example
 
 In this example, a web server and web browser are bridged with Prim+RPC. The
-project setup is similar to the [Client / Server Example](../02-client-server)
+project setup is similar to the [Client / Server Example](../client-server)
 however in this example the server sets and reads from a cookie through
 functions defined with Prim+RPC. This is an example of passing server context to
 your defined functions.
