@@ -100,6 +100,12 @@ importers:
       '@doseofted/prim-rpc-tooling': link:../temp-build/tooling
       nuxt: 3.2.0
 
+  monorepo-setup:
+    specifiers:
+      turbo: ^1.7.0
+    devDependencies:
+      turbo: 1.7.0
+
   monorepo-setup/packages/client:
     specifiers:
       '@doseofted/prim-rpc': workspace:*

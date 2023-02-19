@@ -1,0 +1,12 @@
+{
+	"name": "monorepo-setup",
+	"version": "0.0.1",
+	"license": "UNLICENSED",
+	"private": true,
+	"scripts": {
+		"start": "turbo run start --filter=./packages/*"
+	},
+	"devDependencies": {
+		"turbo": "^1.7.0"
+	}
+}
