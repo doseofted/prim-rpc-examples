@@ -13,7 +13,7 @@
 	"scripts": {
 		"lint": "eslint --ignore-pattern temp-build . --fix",
 		"format": "npx prettier --write .",
-		"monorepo:start": "turbo run start --filter=./examples/04-monorepo/packages/*"
+		"monorepo:start": "turbo run start --filter=./monorepo-setup/packages/*"
 	},
 	"devDependencies": {
 		"@go-task/cli": "^3.20.0",

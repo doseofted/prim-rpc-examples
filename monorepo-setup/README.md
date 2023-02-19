@@ -10,10 +10,8 @@ client and server packages are configured. The "module" package is simply a
 plain JavaScript module and is used directly by the server while its type
 definitions are used by the client.
 
-Since this monorepo example is contained in another monorepo (Prim+RPC
-examples), the root [package.json](../../package.json) contains the scripts to
-start this project. You can start this example by running the helper script
-(configured with [Turbo](https://github.com/vercel/turbo)):
+You can start this example by running the helper script (configured with
+[Turbo](https://github.com/vercel/turbo)):
 
 ```zsh
 pnpm monorepo:start

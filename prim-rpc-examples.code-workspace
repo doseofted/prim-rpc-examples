@@ -6,31 +6,31 @@
 		},
 		{
 			"name": "Simple Test",
-			"path": "./examples/01-simple-test"
+			"path": "./simple-test"
 		},
 		{
 			"name": "Client/Server",
-			"path": "./examples/02-client-server"
+			"path": "./client-server"
 		},
 		{
 			"name": "Web Worker",
-			"path": "./examples/03-web-worker"
+			"path": "./web-worker"
 		},
 		{
 			"name": "Monorepo Setup",
-			"path": "./examples/04-monorepo"
+			"path": "./monorepo-setup"
 		},
 		{
 			"name": "Custom JSON Handler",
-			"path": "./examples/05-custom-handler"
+			"path": "./custom-handler"
 		},
 		{
 			"name": "Server Context",
-			"path": "./examples/06-server-context"
+			"path": "./server-context"
 		},
 		{
 			"name": "Fullstack Framework",
-			"path": "./examples/07-fullstack-framework"
+			"path": "./fullstack-framework"
 		}
 		// {
 		// 	"name": "Starter Tutorial",

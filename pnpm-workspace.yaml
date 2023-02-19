@@ -1,4 +1,12 @@
 packages:
   - "starter"
-  - "examples/**"
+  - "simple-test"
+  - "client-server"
+  - "web-worker"
+  - "monorepo-setup"
+  - "monorepo-setup/packages/**"
+  - "custom-handler"
+  - "server-context"
+  - "fullstack-framework"
+  # to be deleted later
   - "temp-build/**"

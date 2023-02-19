@@ -5,7 +5,7 @@ import {
 	testing,
 } from "@doseofted/prim-rpc"
 // now import your JavaScript code (or inline it into this file, if you like)
-import * as module from "./hello"
+import * as module from "./hello.js"
 
 // SECTION: start server code
 

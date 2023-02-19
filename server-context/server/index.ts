@@ -22,7 +22,11 @@ const wss = new WebSocketServer({ server: fastify.server })
 
 // Register `cors` module with fastify so that client can communicate with server
 await fastify.register(cors, {
-	origin: "http://localhost:3000",
+	origin: [
+		"http://localhost:3000",
+		"http://127.0.0.1:3000",
+		"http://prim.localhost:3000",
+	],
 	credentials: true,
 })
 await fastify.register(cookie)

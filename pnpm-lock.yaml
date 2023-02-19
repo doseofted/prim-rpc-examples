@@ -20,15 +20,7 @@ importers:
       turbo: 1.7.0
       typescript: 4.9.4
 
-  examples/01-simple-test:
-    specifiers:
-      '@doseofted/prim-rpc': workspace:*
-      '@doseofted/prim-rpc-plugins': workspace:*
-    dependencies:
-      '@doseofted/prim-rpc': link:../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
-
-  examples/02-client-server:
+  client-server:
     specifiers:
       '@doseofted/prim-rpc': workspace:*
       '@doseofted/prim-rpc-plugins': workspace:*
@@ -44,90 +36,22 @@ importers:
       ws: ^8.11.0
       zx: ^7.1.1
     dependencies:
-      '@doseofted/prim-rpc': link:../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
-      '@doseofted/prim-rpc-tooling': link:../../temp-build/tooling
+      '@doseofted/prim-rpc': link:../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../temp-build/plugins
+      '@doseofted/prim-rpc-tooling': link:../temp-build/tooling
       '@fastify/cors': 8.2.0
       fastify: 4.10.2
-      ws: 8.11.0
+      ws: 8.12.1
     devDependencies:
       '@types/ws': 8.5.3
       solid-js: 1.6.6
       tsx: 3.12.1
       typescript: 4.9.4
-      vite: 4.0.3
-      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
+      vite: 4.1.1
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.1.1
       zx: 7.1.1
 
-  examples/03-web-worker:
-    specifiers:
-      '@doseofted/prim-rpc': workspace:*
-      '@doseofted/prim-rpc-plugins': workspace:*
-      solid-js: ^1.6.6
-      typescript: ^4.9.4
-      vite: ^4.0.3
-      vite-plugin-solid: ^2.5.0
-    dependencies:
-      '@doseofted/prim-rpc': link:../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
-    devDependencies:
-      solid-js: 1.6.6
-      typescript: 4.9.4
-      vite: 4.0.3
-      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
-
-  examples/04-monorepo/packages/client:
-    specifiers:
-      '@doseofted/prim-rpc': workspace:*
-      '@doseofted/prim-rpc-plugins': workspace:*
-      '@doseofted/prim-rpc-tooling': workspace:*
-      monorepo-module: workspace:*
-      solid-js: ^1.6.6
-      typescript: ^4.9.4
-      vite: ^4.0.3
-      vite-plugin-solid: ^2.5.0
-    devDependencies:
-      '@doseofted/prim-rpc': link:../../../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../../../temp-build/plugins
-      '@doseofted/prim-rpc-tooling': link:../../../../temp-build/tooling
-      monorepo-module: link:../module
-      solid-js: 1.6.6
-      typescript: 4.9.4
-      vite: 4.0.3
-      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
-
-  examples/04-monorepo/packages/module:
-    specifiers:
-      tsup: ^6.5.0
-      typescript: ^4.9.4
-    devDependencies:
-      tsup: 6.5.0_typescript@4.9.4
-      typescript: 4.9.4
-
-  examples/04-monorepo/packages/server:
-    specifiers:
-      '@doseofted/prim-rpc': workspace:*
-      '@doseofted/prim-rpc-plugins': workspace:*
-      '@fastify/cors': ^8.2.0
-      '@types/ws': ^8.5.3
-      fastify: ^4.10.2
-      monorepo-module: workspace:*
-      tsx: ^3.12.1
-      typescript: ^4.9.4
-      ws: ^8.11.0
-    dependencies:
-      '@doseofted/prim-rpc': link:../../../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../../../temp-build/plugins
-      '@fastify/cors': 8.2.0
-      fastify: 4.10.2
-      monorepo-module: link:../module
-      ws: 8.11.0
-    devDependencies:
-      '@types/ws': 8.5.3
-      tsx: 3.12.1
-      typescript: 4.9.4
-
-  examples/05-custom-handler:
+  custom-handler:
     specifiers:
       '@doseofted/prim-rpc': workspace:*
       '@doseofted/prim-rpc-plugins': workspace:*
@@ -146,12 +70,12 @@ importers:
       yaml: ^2.2.1
       zx: ^7.1.1
     dependencies:
-      '@doseofted/prim-rpc': link:../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
-      '@doseofted/prim-rpc-tooling': link:../../temp-build/tooling
+      '@doseofted/prim-rpc': link:../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../temp-build/plugins
+      '@doseofted/prim-rpc-tooling': link:../temp-build/tooling
       cors: 2.8.5
       express: 4.18.2
-      ws: 8.11.0
+      ws: 8.12.1
       yaml: 2.2.1
     devDependencies:
       '@types/cors': 2.8.13
@@ -160,11 +84,74 @@ importers:
       solid-js: 1.6.6
       tsx: 3.12.1
       typescript: 4.9.4
-      vite: 4.0.3
-      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
+      vite: 4.1.1
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.1.1
       zx: 7.1.1
 
-  examples/06-server-context:
+  fullstack-framework:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+      '@doseofted/prim-rpc-tooling': workspace:*
+      nuxt: ^3.2.0
+    devDependencies:
+      '@doseofted/prim-rpc': link:../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../temp-build/plugins
+      '@doseofted/prim-rpc-tooling': link:../temp-build/tooling
+      nuxt: 3.2.0
+
+  monorepo-setup/packages/client:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+      '@doseofted/prim-rpc-tooling': workspace:*
+      monorepo-module: workspace:*
+      solid-js: ^1.6.6
+      typescript: ^4.9.4
+      vite: ^4.0.3
+      vite-plugin-solid: ^2.5.0
+    devDependencies:
+      '@doseofted/prim-rpc': link:../../../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../../../temp-build/plugins
+      '@doseofted/prim-rpc-tooling': link:../../../temp-build/tooling
+      monorepo-module: link:../module
+      solid-js: 1.6.6
+      typescript: 4.9.4
+      vite: 4.1.1
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.1.1
+
+  monorepo-setup/packages/module:
+    specifiers:
+      tsup: ^6.5.0
+      typescript: ^4.9.4
+    devDependencies:
+      tsup: 6.6.3_typescript@4.9.4
+      typescript: 4.9.4
+
+  monorepo-setup/packages/server:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+      '@fastify/cors': ^8.2.0
+      '@types/ws': ^8.5.3
+      fastify: ^4.10.2
+      monorepo-module: workspace:*
+      tsx: ^3.12.1
+      typescript: ^4.9.4
+      ws: ^8.11.0
+    dependencies:
+      '@doseofted/prim-rpc': link:../../../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../../../temp-build/plugins
+      '@fastify/cors': 8.2.0
+      fastify: 4.10.2
+      monorepo-module: link:../module
+      ws: 8.12.1
+    devDependencies:
+      '@types/ws': 8.5.3
+      tsx: 3.12.1
+      typescript: 4.9.4
+
+  server-context:
     specifiers:
       '@doseofted/prim-rpc': workspace:*
       '@doseofted/prim-rpc-plugins': workspace:*
@@ -181,33 +168,29 @@ importers:
       ws: ^8.11.0
       zx: ^7.1.1
     dependencies:
-      '@doseofted/prim-rpc': link:../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
-      '@doseofted/prim-rpc-tooling': link:../../temp-build/tooling
+      '@doseofted/prim-rpc': link:../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../temp-build/plugins
+      '@doseofted/prim-rpc-tooling': link:../temp-build/tooling
       '@fastify/cookie': 8.3.0
       '@fastify/cors': 8.2.0
       fastify: 4.10.2
-      ws: 8.11.0
+      ws: 8.12.1
     devDependencies:
       '@types/ws': 8.5.3
       solid-js: 1.6.6
       tsx: 3.12.1
       typescript: 4.9.4
-      vite: 4.0.3
-      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.0.3
+      vite: 4.1.1
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.1.1
       zx: 7.1.1
 
-  examples/07-fullstack-framework:
+  simple-test:
     specifiers:
       '@doseofted/prim-rpc': workspace:*
       '@doseofted/prim-rpc-plugins': workspace:*
-      '@doseofted/prim-rpc-tooling': workspace:*
-      nuxt: ^3.2.0
-    devDependencies:
-      '@doseofted/prim-rpc': link:../../temp-build/rpc
-      '@doseofted/prim-rpc-plugins': link:../../temp-build/plugins
-      '@doseofted/prim-rpc-tooling': link:../../temp-build/tooling
-      nuxt: 3.2.0
+    dependencies:
+      '@doseofted/prim-rpc': link:../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../temp-build/plugins
 
   starter:
     specifiers:
@@ -327,6 +310,23 @@ importers:
       typedoc: 0.23.24_typescript@4.9.4
       typescript: 4.9.4
 
+  web-worker:
+    specifiers:
+      '@doseofted/prim-rpc': workspace:*
+      '@doseofted/prim-rpc-plugins': workspace:*
+      solid-js: ^1.6.6
+      typescript: ^4.9.4
+      vite: ^4.0.3
+      vite-plugin-solid: ^2.5.0
+    dependencies:
+      '@doseofted/prim-rpc': link:../temp-build/rpc
+      '@doseofted/prim-rpc-plugins': link:../temp-build/plugins
+    devDependencies:
+      solid-js: 1.6.6
+      typescript: 4.9.4
+      vite: 4.1.1
+      vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@4.1.1
+
 packages:
 
   /@ampproject/remapping/2.2.0:
@@ -359,32 +359,9 @@ packages:
       '@babel/helper-compilation-targets': 7.20.7_@babel+core@7.20.12
       '@babel/helper-module-transforms': 7.20.11
       '@babel/helpers': 7.20.7
-      '@babel/parser': 7.20.7
+      '@babel/parser': 7.20.15
       '@babel/template': 7.20.7
       '@babel/traverse': 7.20.13
-      '@babel/types': 7.20.7
-      convert-source-map: 1.9.0
-      debug: 4.3.4
-      gensync: 1.0.0-beta.2
-      json5: 2.2.2
-      semver: 6.3.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@babel/core/7.20.7:
-    resolution: {integrity: sha512-t1ZjCluspe5DW24bn2Rr1CDb2v9rn/hROtg9a2tmd0+QYf4bsloYfLQzjG4qHPNMhWtKdGC33R5AxGR2Af2cBw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@ampproject/remapping': 2.2.0
-      '@babel/code-frame': 7.18.6
-      '@babel/generator': 7.20.7
-      '@babel/helper-compilation-targets': 7.20.7_@babel+core@7.20.7
-      '@babel/helper-module-transforms': 7.20.11
-      '@babel/helpers': 7.20.7
-      '@babel/parser': 7.20.7
-      '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.10
       '@babel/types': 7.20.7
       convert-source-map: 1.9.0
       debug: 4.3.4
@@ -425,27 +402,13 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /@babel/helper-compilation-targets/7.20.7_@babel+core@7.20.7:
-    resolution: {integrity: sha512-4tGORmfQcrc+bvrjb5y3dG9Mx1IOZjsHqQVUz7XCNHO+iTmqxWnVg3KRygjGmpRLJGdQSKuvFinbIb0CnZwHAQ==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-    dependencies:
-      '@babel/compat-data': 7.20.10
-      '@babel/core': 7.20.7
-      '@babel/helper-validator-option': 7.18.6
-      browserslist: 4.21.4
-      lru-cache: 5.1.1
-      semver: 6.3.0
-    dev: true
-
-  /@babel/helper-create-class-features-plugin/7.20.7_@babel+core@7.20.7:
+  /@babel/helper-create-class-features-plugin/7.20.7_@babel+core@7.20.12:
     resolution: {integrity: sha512-LtoWbDXOaidEf50hmdDqn9g8VEzsorMexoWMQdQODbvmqYmaF23pBP5VNPAGIFHsFQCIeKokDiz3CH5Y2jlY6w==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
-      '@babel/core': 7.20.7
+      '@babel/core': 7.20.12
       '@babel/helper-annotate-as-pure': 7.18.6
       '@babel/helper-environment-visitor': 7.18.9
       '@babel/helper-function-name': 7.19.0
@@ -508,7 +471,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.18.6
       '@babel/helper-validator-identifier': 7.19.1
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.10
+      '@babel/traverse': 7.20.13
       '@babel/types': 7.20.7
     transitivePeerDependencies:
       - supports-color
@@ -534,7 +497,7 @@ packages:
       '@babel/helper-member-expression-to-functions': 7.20.7
       '@babel/helper-optimise-call-expression': 7.18.6
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.10
+      '@babel/traverse': 7.20.13
       '@babel/types': 7.20.7
     transitivePeerDependencies:
       - supports-color
@@ -574,7 +537,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.10
+      '@babel/traverse': 7.20.13
       '@babel/types': 7.20.7
     transitivePeerDependencies:
       - supports-color
@@ -597,58 +560,50 @@ packages:
       '@babel/types': 7.20.7
     dev: true
 
-  /@babel/parser/7.20.7:
-    resolution: {integrity: sha512-T3Z9oHybU+0vZlY9CiDSJQTD5ZapcW18ZctFMi0MOAl/4BjFF4ul7NVSARLdbGO5vDqy9eQiGTV0LtKfvCYvcg==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
-    dependencies:
-      '@babel/types': 7.20.7
-    dev: true
-
-  /@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.20.7:
+  /@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.20.12:
     resolution: {integrity: sha512-6mmljtAedFGTWu2p/8WIORGwy+61PLgOMPOdazc7YoJ9ZCWUyFy3A6CpPkRKLKD1ToAesxX8KGEViAiLo9N+7Q==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.20.7
+      '@babel/core': 7.20.12
       '@babel/helper-plugin-utils': 7.20.2
     dev: true
 
-  /@babel/plugin-syntax-typescript/7.20.0_@babel+core@7.20.7:
+  /@babel/plugin-syntax-typescript/7.20.0_@babel+core@7.20.12:
     resolution: {integrity: sha512-rd9TkG+u1CExzS4SM1BlMEhMXwFLKVjOAFFCDx9PbX5ycJWDoWMcwdJH9RhkPu1dOgn5TrxLot/Gx6lWFuAUNQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.20.7
+      '@babel/core': 7.20.12
       '@babel/helper-plugin-utils': 7.20.2
     dev: true
 
-  /@babel/plugin-transform-typescript/7.20.7_@babel+core@7.20.7:
+  /@babel/plugin-transform-typescript/7.20.7_@babel+core@7.20.12:
     resolution: {integrity: sha512-m3wVKEvf6SoszD8pu4NZz3PvfKRCMgk6D6d0Qi9hNnlM5M6CFS92EgF4EiHVLKbU0r/r7ty1hg7NPZwE7WRbYw==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.20.7
-      '@babel/helper-create-class-features-plugin': 7.20.7_@babel+core@7.20.7
+      '@babel/core': 7.20.12
+      '@babel/helper-create-class-features-plugin': 7.20.7_@babel+core@7.20.12
       '@babel/helper-plugin-utils': 7.20.2
-      '@babel/plugin-syntax-typescript': 7.20.0_@babel+core@7.20.7
+      '@babel/plugin-syntax-typescript': 7.20.0_@babel+core@7.20.12
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@babel/preset-typescript/7.18.6_@babel+core@7.20.7:
+  /@babel/preset-typescript/7.18.6_@babel+core@7.20.12:
     resolution: {integrity: sha512-s9ik86kXBAnD760aybBucdpnLsAt0jK1xqJn2juOn9lkOvSHV60os5hxoVJsPzMQxvnUJFAlkont2DvvaYEBtQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.20.7
+      '@babel/core': 7.20.12
       '@babel/helper-plugin-utils': 7.20.2
       '@babel/helper-validator-option': 7.18.6
-      '@babel/plugin-transform-typescript': 7.20.7_@babel+core@7.20.7
+      '@babel/plugin-transform-typescript': 7.20.7_@babel+core@7.20.12
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -663,26 +618,8 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.18.6
-      '@babel/parser': 7.20.7
+      '@babel/parser': 7.20.15
       '@babel/types': 7.20.7
-    dev: true
-
-  /@babel/traverse/7.20.10:
-    resolution: {integrity: sha512-oSf1juCgymrSez8NI4A2sr4+uB/mFd9MXplYGPEBnfAuWmmyeVcHa6xLPiaRBcXkcb/28bgxmQLTVwFKE1yfsg==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/code-frame': 7.18.6
-      '@babel/generator': 7.20.7
-      '@babel/helper-environment-visitor': 7.18.9
-      '@babel/helper-function-name': 7.19.0
-      '@babel/helper-hoist-variables': 7.18.6
-      '@babel/helper-split-export-declaration': 7.18.6
-      '@babel/parser': 7.20.7
-      '@babel/types': 7.20.7
-      debug: 4.3.4
-      globals: 11.12.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@babel/traverse/7.20.13:
@@ -2272,9 +2209,9 @@ packages:
       vite: ^4.0.0
       vue: ^3.0.0
     dependencies:
-      '@babel/core': 7.20.7
-      '@babel/plugin-transform-typescript': 7.20.7_@babel+core@7.20.7
-      '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.7
+      '@babel/core': 7.20.12
+      '@babel/plugin-transform-typescript': 7.20.7_@babel+core@7.20.12
+      '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.12
       vite: 4.1.1
       vue: 3.2.47
     transitivePeerDependencies:
@@ -2296,13 +2233,13 @@ packages:
     resolution: {integrity: sha512-hz4R8tS5jMn8lDq6iD+yWL6XNB699pGIVLk7WSJnn1dbpjaazsjZQkieJoRX6gW5zpYSCFqQ7jUquPNY65tQYA==}
     dev: true
 
-  /@vue/babel-plugin-jsx/1.1.1_@babel+core@7.20.7:
+  /@vue/babel-plugin-jsx/1.1.1_@babel+core@7.20.12:
     resolution: {integrity: sha512-j2uVfZjnB5+zkcbc/zsOc0fSNGCMMjaEXP52wdwdIfn0qjFfEYpYZBFKFg+HHnQeJCVrjOeO0YxgaL7DMrym9w==}
     dependencies:
       '@babel/helper-module-imports': 7.18.6
-      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.7
+      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.12
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.10
+      '@babel/traverse': 7.20.13
       '@babel/types': 7.20.7
       '@vue/babel-helper-vue-transform-on': 1.0.2
       camelcase: 6.3.0
@@ -2316,7 +2253,7 @@ packages:
   /@vue/compiler-core/3.2.47:
     resolution: {integrity: sha512-p4D7FDnQb7+YJmO2iPEv0SQNeNzcbHdGByJDsT4lynf63AFkOTFN07HsiRSvjGo0QrxR/o3d0hUyNCUnBU2Tig==}
     dependencies:
-      '@babel/parser': 7.20.7
+      '@babel/parser': 7.20.15
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
       source-map: 0.6.1
@@ -2332,7 +2269,7 @@ packages:
   /@vue/compiler-sfc/3.2.47:
     resolution: {integrity: sha512-rog05W+2IFfxjMcFw10tM9+f7i/+FFpZJJ5XHX72NP9eC2uRD+42M3pYcQqDXVYoj74kHMSEdQ/WmCjt8JFksQ==}
     dependencies:
-      '@babel/parser': 7.20.7
+      '@babel/parser': 7.20.15
       '@vue/compiler-core': 3.2.47
       '@vue/compiler-dom': 3.2.47
       '@vue/compiler-ssr': 3.2.47
@@ -2340,7 +2277,7 @@ packages:
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.20
+      postcss: 8.4.21
       source-map: 0.6.1
     dev: true
 
@@ -2358,7 +2295,7 @@ packages:
   /@vue/reactivity-transform/3.2.47:
     resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==}
     dependencies:
-      '@babel/parser': 7.20.7
+      '@babel/parser': 7.20.15
       '@vue/compiler-core': 3.2.47
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
@@ -2662,25 +2599,25 @@ packages:
       - debug
     dev: true
 
-  /babel-plugin-jsx-dom-expressions/0.35.9_@babel+core@7.20.7:
+  /babel-plugin-jsx-dom-expressions/0.35.9_@babel+core@7.20.12:
     resolution: {integrity: sha512-YXb+I4dej5E94bzPzPBECUT5Q5vuSQJzsq1NgW8fe4gsgg6vcy6c6VqixgtY0UU8udKTc1Ls5CmgaFDj2fO9lA==}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
-      '@babel/core': 7.20.7
+      '@babel/core': 7.20.12
       '@babel/helper-module-imports': 7.16.0
-      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.7
+      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.12
       '@babel/types': 7.20.7
       html-entities: 2.3.2
     dev: true
 
-  /babel-preset-solid/1.6.6_@babel+core@7.20.7:
+  /babel-preset-solid/1.6.6_@babel+core@7.20.12:
     resolution: {integrity: sha512-uG6svyjDRmQxLtRyydlJjFkvlOGYEd/xvfUZu58UuzJdiv40lZ34K+EcgbAFD85JPUdlnkr6bbHUpUXP/VK+Jg==}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
-      '@babel/core': 7.20.7
-      babel-plugin-jsx-dom-expressions: 0.35.9_@babel+core@7.20.7
+      '@babel/core': 7.20.12
+      babel-plugin-jsx-dom-expressions: 0.35.9_@babel+core@7.20.12
     dev: true
 
   /balanced-match/1.0.2:
@@ -2797,13 +2734,13 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /bundle-require/3.1.2_esbuild@0.15.18:
-    resolution: {integrity: sha512-Of6l6JBAxiyQ5axFxUM6dYeP/W7X2Sozeo/4EYB9sJhL+dqL7TKjg+shwxp6jlu/6ZSERfsYtIpSJ1/x3XkAEA==}
+  /bundle-require/4.0.1_esbuild@0.17.8:
+    resolution: {integrity: sha512-9NQkRHlNdNpDBGmLpngF3EFDcwodhMUuLz9PaWYciVcQF9SE4LFjM2DB/xV1Li5JiuDMv7ZUWuC3rGbqR0MAXQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
-      esbuild: '>=0.13'
+      esbuild: '>=0.17'
     dependencies:
-      esbuild: 0.15.18
+      esbuild: 0.17.8
       load-tsconfig: 0.2.3
     dev: true
 
@@ -5207,7 +5144,7 @@ packages:
   /mlly/1.1.0:
     resolution: {integrity: sha512-cwzBrBfwGC1gYJyfcy8TcZU1f+dbH/T+TuOhtYP2wLv/Fb51/uV7HJQfBPtEupZ2ORLRU1EKFS/QfS3eo9+kBQ==}
     dependencies:
-      acorn: 8.8.1
+      acorn: 8.8.2
       pathe: 1.1.0
       pkg-types: 1.0.1
       ufo: 1.0.1
@@ -6820,7 +6757,7 @@ packages:
       '@types/supertest': 2.0.12
       '@types/ws': 8.5.3
       supertest: 6.3.3
-      ws: 8.11.0
+      ws: 8.12.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -7001,9 +6938,9 @@ packages:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: true
 
-  /tsup/6.5.0_typescript@4.9.4:
-    resolution: {integrity: sha512-36u82r7rYqRHFkD15R20Cd4ercPkbYmuvRkz3Q1LCm5BsiFNUgpo36zbjVhCOgvjyxNBWNKHsaD5Rl8SykfzNA==}
-    engines: {node: '>=14'}
+  /tsup/6.6.3_typescript@4.9.4:
+    resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
+    engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
       '@swc/core': ^1
@@ -7017,17 +6954,17 @@ packages:
       typescript:
         optional: true
     dependencies:
-      bundle-require: 3.1.2_esbuild@0.15.18
+      bundle-require: 4.0.1_esbuild@0.17.8
       cac: 6.7.14
       chokidar: 3.5.3
       debug: 4.3.4
-      esbuild: 0.15.18
+      esbuild: 0.17.8
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 3.9.0
+      rollup: 3.15.0
       source-map: 0.8.0-beta.0
       sucrase: 3.29.0
       tree-kill: 1.2.2
@@ -7397,20 +7334,20 @@ packages:
       vscode-uri: 3.0.7
     dev: true
 
-  /vite-plugin-solid/2.5.0_solid-js@1.6.6+vite@4.0.3:
+  /vite-plugin-solid/2.5.0_solid-js@1.6.6+vite@4.1.1:
     resolution: {integrity: sha512-VneGd3RyFJvwaiffsqgymeMaofn0IzQLPwDzafTV2f1agoWeeJlk5VrI5WqT9BTtLe69vNNbCJWqLhHr9fOdDw==}
     peerDependencies:
       solid-js: ^1.3.17 || ^1.4.0 || ^1.5.0 || ^1.6.0
       vite: ^3.0.0 || ^4.0.0
     dependencies:
-      '@babel/core': 7.20.7
-      '@babel/preset-typescript': 7.18.6_@babel+core@7.20.7
-      babel-preset-solid: 1.6.6_@babel+core@7.20.7
+      '@babel/core': 7.20.12
+      '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
+      babel-preset-solid: 1.6.6_@babel+core@7.20.12
       merge-anything: 5.1.4
       solid-js: 1.6.6
       solid-refresh: 0.4.1_solid-js@1.6.6
-      vite: 4.0.3
-      vitefu: 0.2.4_vite@4.0.3
+      vite: 4.1.1
+      vitefu: 0.2.4_vite@4.1.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7481,7 +7418,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitefu/0.2.4_vite@4.0.3:
+  /vitefu/0.2.4_vite@4.1.1:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0
@@ -7489,7 +7426,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.0.3
+      vite: 4.1.1
     dev: true
 
   /vscode-jsonrpc/6.0.0:
@@ -7661,6 +7598,7 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+    dev: true
 
   /ws/8.12.1:
     resolution: {integrity: sha512-1qo+M9Ba+xNhPB+YTWUlK6M17brTut5EXbcBaMRN5pH5dFrXz7lzz1ChFSUq3bOUl8yEvSenhHmYUNJxFzdJew==}
@@ -7673,7 +7611,6 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
-    dev: true
 
   /ws/8.2.3:
     resolution: {integrity: sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==}
