@@ -25,3 +25,9 @@ importing the code itself). In this tutorial, we'll learn how to do this with
 Prim+RPC.
 
 [Start Tutorial](https://prim.doseofted.com/docs/setup)
+
+You can start this project in development mode with the following command:
+
+```zsh
+pnpm dev
+```
