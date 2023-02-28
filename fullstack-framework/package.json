@@ -12,9 +12,9 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
-		"@doseofted/prim-rpc": "workspace:*",
-		"@doseofted/prim-rpc-plugins": "workspace:*",
-		"@doseofted/prim-rpc-tooling": "workspace:*",
+		"@doseofted/prim-rpc": "^0.1.0-alpha.0",
+		"@doseofted/prim-rpc-plugins": "^0.1.0-alpha.0",
+		"@doseofted/prim-rpc-tooling": "^0.1.0-alpha.0",
 		"nuxt": "^3.2.0"
 	}
 }

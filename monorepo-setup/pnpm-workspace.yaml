@@ -1,4 +1,2 @@
 packages:
   - "packages/**"
-  # to be deleted later
-  - "temp-build/**"

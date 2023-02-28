@@ -8,5 +8,3 @@ packages:
   - "custom-handler"
   - "server-context"
   - "fullstack-framework"
-  # to be deleted later
-  - "temp-build/**"

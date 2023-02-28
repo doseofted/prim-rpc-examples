@@ -3,7 +3,7 @@
 > **Warning** This is not a full example in itself. It is intended to act as a
 > starting point for the
 > [tutorial on the Prim+RPC documentation website](https://prim.doseofted.com/docs/setup).
-> See [other examples](../examples) for a completely configured project.
+> See [other examples](../) for a completely configured project.
 
 In this project, we have a pre-configured web server using the
 [Fastify](https://github.com/fastify/fastify) framework and a website built with
