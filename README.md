@@ -25,11 +25,10 @@ corepack enable
 pnpm install
 ```
 
-## Todo
+## License
 
-Before publishing examples the following tasks should be completed:
-
-- [ ] Replace all RPC-related `workspace:*` references with actual packages
-      (instead of local build)
+These example usages are licensed under the [MIT license](./LICENSE.md). Since
+these examples may be used as a starting point, each project's `package.json`
+license field is left as `UNLICENSED`.
 
 [^1]: Example yet to be created
