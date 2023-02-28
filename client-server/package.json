@@ -7,7 +7,7 @@
 	"scripts": {
 		"serve": "tsx watch --clear-screen=false server/index.ts",
 		"client": "vite dev",
-		"start": "zx start.js"
+		"start": "concurrently \"npm:serve\" \"npm:client\""
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "^0.1.0-alpha.0",
@@ -19,11 +19,11 @@
 	},
 	"devDependencies": {
 		"@types/ws": "^8.5.3",
+		"concurrently": "^7.6.0",
 		"solid-js": "^1.6.6",
 		"tsx": "^3.12.1",
 		"typescript": "^4.9.4",
 		"vite": "^4.0.3",
-		"vite-plugin-solid": "^2.5.0",
-		"zx": "^7.1.1"
+		"vite-plugin-solid": "^2.5.0"
 	}
 }
