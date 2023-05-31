@@ -8,6 +8,6 @@
 		"start": "turbo run start --filter=./packages/*"
 	},
 	"devDependencies": {
-		"turbo": "^1.7.0"
+		"turbo": "^1.10.0"
 	}
 }
