@@ -1,6 +1,6 @@
 # Custom JSON Handler Example
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/custom-handler)
+<!-- [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/custom-handler) -->
 
 In this example, a web server and web browser are bridged with Prim+RPC. This is
 very similar to the [Client / Server Example](../client-server) except that this

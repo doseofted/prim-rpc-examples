@@ -1,6 +1,6 @@
 # Simple Example
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/simple-test)
+<!-- [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/simple-test) -->
 
 In this example, both the Prim+RPC client and server are used in the
 [same file](./index.js) to communicate with [our JavaScript module](./hello.js).

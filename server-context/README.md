@@ -1,6 +1,6 @@
 # Server Context Example
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/server-context)
+<!-- [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/server-context) -->
 
 In this example, a web server and web browser are bridged with Prim+RPC. The
 project setup is similar to the [Client / Server Example](../client-server)
