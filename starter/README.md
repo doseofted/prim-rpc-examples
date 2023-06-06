@@ -2,7 +2,7 @@
 
 > **Warning** This is not a full example in itself. It is intended to act as a
 > starting point for the
-> [tutorial on the Prim+RPC documentation website](https://prim.doseofted.com/docs/setup).
+> [tutorial on the Prim+RPC documentation website](https://prim.doseofted.me/docs/setup).
 > See [other examples](../) for a completely configured project.
 
 In this project, we have a pre-configured web server using the
@@ -24,7 +24,7 @@ function from the server as if it exists on the client already (without
 importing the code itself). In this tutorial, we'll learn how to do this with
 Prim+RPC.
 
-[Start Tutorial](https://prim.doseofted.com/docs/setup)
+[Start Tutorial](https://prim.doseofted.me/docs/setup)
 
 You can start this project in development mode with the following command:
 
