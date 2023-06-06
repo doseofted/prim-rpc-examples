@@ -1,6 +1,6 @@
 # Fullstack Framework Example
 
-<!-- [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/fullstack-framework) -->
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/fullstack-framework)
 
 In this example, Prim+RPC is used in the fullstack framework
 [Nuxt](https://nuxt.com/).

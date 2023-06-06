@@ -33,6 +33,7 @@ const wss = new WebSocketServer({ server })
 
 // Register `cors` module with Express so that client can communicate with server
 app.use(cors())
+app.get("/health", (_, res) => res.send("ok")) // simple health check
 
 // Now create the Prim+RPC with the configured module and plugins for our servers
 createPrimServer({

@@ -20,6 +20,7 @@ const wss = new WebSocketServer({ server: fastify.server })
 
 // Register `cors` module with fastify so that client can communicate with server
 await fastify.register(cors)
+fastify.get("/health", () => "ok") // simple health check
 
 // Now create the Prim+RPC with the configured module and plugins for our servers
 createPrimServer({

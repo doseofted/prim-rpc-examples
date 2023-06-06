@@ -7,6 +7,6 @@ import type module from "@/hello"
 
 // Setup the Prim+RPC client and give it the endpoint of the configured server
 export const backend = createPrimClient<typeof module>({
-	endpoint: "http://website.localhost:3000/api/prim",
+	endpoint: "http://localhost:3000/api/prim",
 	methodPlugin: createMethodPlugin(),
 })

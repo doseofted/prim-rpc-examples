@@ -49,11 +49,13 @@ function App() {
 }
 
 // Render Solid app to HTML given in #root of index.html
-render(() => <App />, document.getElementById("root") as HTMLElement)
+const root = document.getElementById("root") as HTMLElement
+const dispose = render(() => <App />, root)
 
 // ignore this bit (it's just in case server isn't running yet in development mode)
 if (import.meta.hot) {
-	fetch("http://website.localhost:3001/").catch(() =>
-		setTimeout(location.reload, 150)
+	import.meta.hot?.dispose(dispose)
+	fetch("http://website.localhost:3001/health").catch(() =>
+		setTimeout(() => location.reload(), 300)
 	)
 }
