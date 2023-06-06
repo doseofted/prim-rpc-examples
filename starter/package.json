@@ -1,6 +1,7 @@
 {
 	"name": "prim-rpc-starter",
 	"version": "0.0.1",
+	"packageManager": "pnpm@7.14.2",
 	"description": "An example project to get started with Prim+RPC",
 	"private": true,
 	"license": "UNLICENSED",

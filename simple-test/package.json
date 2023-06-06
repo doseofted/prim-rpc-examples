@@ -1,6 +1,7 @@
 {
 	"name": "simple-test",
 	"version": "0.0.1",
+	"packageManager": "pnpm@7.14.2",
 	"license": "UNLICENSED",
 	"private": true,
 	"type": "module",

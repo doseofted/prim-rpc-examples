@@ -6,7 +6,7 @@ import html from "solid-js/html"
 
 async function fetchHello() {
 	const message = await fetch(
-		"http://[::1]:3001/api?x=Frontend&y=Backend"
+		"http://website.localhost:3001/api?x=Frontend&y=Backend"
 	).then((r) => r.text())
 	console.log("Message:", message)
 	return message
@@ -14,3 +14,10 @@ async function fetchHello() {
 
 const [message] = createResource(fetchHello)
 render(() => html`<p>${() => message()}</p>`, document.body)
+
+// ignore this bit (it's just in case server isn't running yet in development mode)
+if (import.meta.hot) {
+	fetch("http://website.localhost:3001/").catch(() =>
+		setTimeout(location.reload, 150)
+	)
+}

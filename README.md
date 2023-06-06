@@ -1,5 +1,7 @@
 # Prim+RPC Examples
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples)
+
 Examples of Prim+RPC usage. Referenced in
 [Prim+RPC documentation](http://prim.doseofted.me/docs/examples):
 

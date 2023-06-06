@@ -1,5 +1,7 @@
 # Web Worker Example
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/web-worker)
+
 In this example, a website and its Web Worker are bridged with Prim+RPC. The
 website will act as a client and the Web Worker will act as the server.
 

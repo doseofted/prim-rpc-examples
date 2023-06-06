@@ -29,7 +29,7 @@ const jsonHandler: JsonHandler = {
 
 // Setup the Prim+RPC client and give it the endpoint of the configured server
 const backend = createPrimClient<typeof module>({
-	endpoint: "http://[::1]:3001/",
+	endpoint: "http://website.localhost:3001/",
 	jsonHandler,
 	handleBlobs: false,
 	methodPlugin: createMethodPlugin(),
@@ -50,3 +50,10 @@ function App() {
 
 // Render Solid app to HTML given in #root of index.html
 render(() => <App />, document.getElementById("root") as HTMLElement)
+
+// ignore this bit (it's just in case server isn't running yet in development mode)
+if (import.meta.hot) {
+	fetch("http://website.localhost:3001/").catch(() =>
+		setTimeout(location.reload, 150)
+	)
+}
