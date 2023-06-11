@@ -17,5 +17,9 @@
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.3",
 		"@types/node": "^20.3.0",
 		"nuxt": "^3.5.3"
+	},
+	"stackblitz": {
+		"installDependencies": false,
+		"startCommand": "pnpm install && pnpm start"
 	}
 }

@@ -24,5 +24,9 @@
 		"@fastify/static": "^6.10.2",
 		"fastify": "^4.18.0",
 		"tsx": "^3.12.7"
+	},
+	"stackblitz": {
+		"installDependencies": false,
+		"startCommand": "pnpm install && pnpm dev"
 	}
 }

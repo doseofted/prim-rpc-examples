@@ -8,5 +8,9 @@
 	},
 	"devDependencies": {
 		"turbo": "^1.10.3"
+	},
+	"stackblitz": {
+		"installDependencies": false,
+		"startCommand": "pnpm install && pnpm start"
 	}
 }

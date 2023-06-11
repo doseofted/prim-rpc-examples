@@ -25,5 +25,9 @@
 		"typescript": "^5.0.4",
 		"vite": "^4.3.9",
 		"vite-plugin-solid": "^2.7.0"
+	},
+	"stackblitz": {
+		"installDependencies": false,
+		"startCommand": "pnpm install && pnpm start"
 	}
 }
