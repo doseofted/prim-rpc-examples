@@ -4,29 +4,29 @@ importers:
 
   .:
     specifiers:
-      turbo: ^1.10.0
+      turbo: ^1.10.3
     devDependencies:
-      turbo: 1.10.0
+      turbo: 1.10.3
 
   packages/client:
     specifiers:
-      '@doseofted/prim-rpc': 0.1.0-alpha.2
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.2
-      '@doseofted/prim-rpc-tooling': 0.1.0-alpha.2
+      '@doseofted/prim-rpc': 0.1.0-alpha.3
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3
+      '@doseofted/prim-rpc-tooling': 0.1.0-alpha.3
       monorepo-module: workspace:*
-      solid-js: ^1.7.5
+      solid-js: ^1.7.6
       typescript: ^5.0.4
       vite: ^4.3.9
       vite-plugin-solid: ^2.7.0
     devDependencies:
-      '@doseofted/prim-rpc': 0.1.0-alpha.2
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.2
-      '@doseofted/prim-rpc-tooling': 0.1.0-alpha.2
+      '@doseofted/prim-rpc': 0.1.0-alpha.3
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3
+      '@doseofted/prim-rpc-tooling': 0.1.0-alpha.3
       monorepo-module: link:../module
-      solid-js: 1.7.5
+      solid-js: 1.7.6
       typescript: 5.0.4
       vite: 4.3.9
-      vite-plugin-solid: 2.7.0_solid-js@1.7.5+vite@4.3.9
+      vite-plugin-solid: 2.7.0_solid-js@1.7.6+vite@4.3.9
 
   packages/module:
     specifiers:
@@ -38,24 +38,24 @@ importers:
 
   packages/server:
     specifiers:
-      '@doseofted/prim-rpc': 0.1.0-alpha.2
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.2
+      '@doseofted/prim-rpc': 0.1.0-alpha.3
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3
       '@fastify/cors': ^8.3.0
-      '@types/ws': ^8.5.4
-      fastify: ^4.17.0
+      '@types/ws': ^8.5.5
+      fastify: ^4.18.0
       monorepo-module: workspace:*
       tsx: ^3.12.7
       typescript: ^5.0.4
       ws: ^8.13.0
     dependencies:
-      '@doseofted/prim-rpc': 0.1.0-alpha.2
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.2_fastify@4.17.0+ws@8.13.0
+      '@doseofted/prim-rpc': 0.1.0-alpha.3
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3_fastify@4.18.0+ws@8.13.0
       '@fastify/cors': 8.3.0
-      fastify: 4.17.0
+      fastify: 4.18.0
       monorepo-module: link:../module
       ws: 8.13.0
     devDependencies:
-      '@types/ws': 8.5.4
+      '@types/ws': 8.5.5
       tsx: 3.12.7
       typescript: 5.0.4
 
@@ -378,13 +378,14 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@doseofted/prim-rpc-plugins/0.1.0-alpha.2:
-    resolution: {integrity: sha512-Bej4N3LX04iZfVbxM+gu2bQmMGVVa/HvMdvJsUf31AoVKAGq7F3Omo4NjmTiLZjc1NodLN8xSdSz3bxPMyALWQ==}
+  /@doseofted/prim-rpc-plugins/0.1.0-alpha.3:
+    resolution: {integrity: sha512-LWev55OO7DFZssZdmUSFVTNa70XtFDN5w83PqP7w4ZAjNI5NHPxWjqdZOmLIxr7jO4SL8cEHq2dAvWyYjpK3Vg==}
     peerDependencies:
       axios: 1.x
       express: 4.x
       fastify: 4.x
       h3: 1.x
+      next: 13.x
       ws: 8.x
     peerDependenciesMeta:
       axios:
@@ -394,6 +395,8 @@ packages:
       fastify:
         optional: true
       h3:
+        optional: true
+      next:
         optional: true
       ws:
         optional: true
@@ -402,13 +405,14 @@ packages:
       nanoid: 4.0.2
     dev: true
 
-  /@doseofted/prim-rpc-plugins/0.1.0-alpha.2_fastify@4.17.0+ws@8.13.0:
-    resolution: {integrity: sha512-Bej4N3LX04iZfVbxM+gu2bQmMGVVa/HvMdvJsUf31AoVKAGq7F3Omo4NjmTiLZjc1NodLN8xSdSz3bxPMyALWQ==}
+  /@doseofted/prim-rpc-plugins/0.1.0-alpha.3_fastify@4.18.0+ws@8.13.0:
+    resolution: {integrity: sha512-LWev55OO7DFZssZdmUSFVTNa70XtFDN5w83PqP7w4ZAjNI5NHPxWjqdZOmLIxr7jO4SL8cEHq2dAvWyYjpK3Vg==}
     peerDependencies:
       axios: 1.x
       express: 4.x
       fastify: 4.x
       h3: 1.x
+      next: 13.x
       ws: 8.x
     peerDependenciesMeta:
       axios:
@@ -419,28 +423,32 @@ packages:
         optional: true
       h3:
         optional: true
+      next:
+        optional: true
       ws:
         optional: true
     dependencies:
-      fastify: 4.17.0
+      fastify: 4.18.0
       mitt: 3.0.0
       nanoid: 4.0.2
       ws: 8.13.0
     dev: false
 
-  /@doseofted/prim-rpc-tooling/0.1.0-alpha.2:
-    resolution: {integrity: sha512-gRxr+jEuz77xkJd9GlCLPe3ej2FGliBiI2dL98/L7cp0gpgdx0hmLfJW/M/aPHr1np+DEdD2fQKkd7BylUzXUw==}
+  /@doseofted/prim-rpc-tooling/0.1.0-alpha.3:
+    resolution: {integrity: sha512-C2pDHlXKmX04o0tzTVjVVmubr+LsctsS/UBn9YfcxdDJKnZeYAuaBG6mJljOCn0vPMqXM5g0p5xbQ8R2Am6s6Q==}
     dependencies:
-      lodash-es: 4.17.21
+      just-safe-get: 4.2.0
+      just-safe-set: 4.2.1
       unplugin: 1.3.1
       zx: 7.2.2
     dev: true
 
-  /@doseofted/prim-rpc/0.1.0-alpha.2:
-    resolution: {integrity: sha512-nw7o/pATXYCl0O1OtXuP+cK3a4QH+FWTg5xhXppwYVktXcFODESpwC33nM5T6gFuByEhUN4TSLcYJLd/VUb5Pg==}
+  /@doseofted/prim-rpc/0.1.0-alpha.3:
+    resolution: {integrity: sha512-SdgjmGVQqyaikAGfmtm3Dw8wRAMBKJuwofrFziMcfOMU4Tx6ufC5ZtvaoS94lwaoDjl6qVVrUp/gIYF/novJ5g==}
     dependencies:
       defu: 6.1.2
-      lodash-es: 4.17.21
+      just-remove: 3.2.0
+      just-safe-get: 4.2.0
       mitt: 3.0.0
       nanoid: 4.0.2
       proxy-deep: 3.1.1
@@ -801,10 +809,6 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.14.2:
-    resolution: {integrity: sha512-1uEQxww3DaghA0RxqHx0O0ppVlo43pJhepY51OxuQIKHpjbnYLA7vcdwioNPzIqmC2u3I/dmylcqjlh0e7AyUA==}
-    dev: true
-
   /@types/node/18.16.16:
     resolution: {integrity: sha512-NpaM49IGQQAUlBhHMF82QH80J08os4ZmyF9MkpCzWAGuOHqE4gTEbhzd7L3l5LmWuZ6E0OiC1FweQ4tsiW35+g==}
     dev: true
@@ -817,10 +821,10 @@ packages:
     resolution: {integrity: sha512-ASCxdbsrwNfSMXALlC3Decif9rwDMu+80KGp5zI2RLRotfMsTv7fHL8W8VDp24wymzDyIFudhUeSCugrgRFfHQ==}
     dev: true
 
-  /@types/ws/8.5.4:
-    resolution: {integrity: sha512-zdQDHKUgcX/zBc4GrwsE/7dVdAD8JR4EuiAXiiUhhfyIJXXb2+PrGshFyeXWQPMmmZ2XxgaqclgpIC7eTXc1mg==}
+  /@types/ws/8.5.5:
+    resolution: {integrity: sha512-lwhs8hktwxSjf9UaZ9tG5M03PGogvFaH8gUgLNbN9HKIg0dvv6q+gkSuJ8HN4/VbyxkuLzCjlN7GquQ0gUJfIg==}
     dependencies:
-      '@types/node': 18.14.2
+      '@types/node': 18.16.16
     dev: true
 
   /abort-controller/3.0.0:
@@ -1229,8 +1233,8 @@ packages:
     resolution: {integrity: sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg==}
     dev: false
 
-  /fastify/4.17.0:
-    resolution: {integrity: sha512-tzuY1tgWJo2Y6qEKwmLhFvACUmr68Io2pqP/sDKU71KRM6A6R3DrCDqLGqANbeLZcKUfdfY58ut35CGqemcTgg==}
+  /fastify/4.18.0:
+    resolution: {integrity: sha512-L5o/2GEkBastQ3HV0dtKo7SUZ497Z1+q4fcqAoPyq6JCQ/8zdk1JQEoTQwnBWCp+EmA7AQa6mxNqSAEhzP0RwQ==}
     dependencies:
       '@fastify/ajv-compiler': 3.5.0
       '@fastify/error': 3.2.0
@@ -1241,12 +1245,12 @@ packages:
       fast-json-stringify: 5.7.0
       find-my-way: 7.6.2
       light-my-request: 5.9.1
-      pino: 8.11.0
-      process-warning: 2.1.0
+      pino: 8.14.1
+      process-warning: 2.2.0
       proxy-addr: 2.0.7
       rfdc: 1.3.0
       secure-json-parse: 2.7.0
-      semver: 7.3.8
+      semver: 7.5.1
       tiny-lru: 11.0.1
     transitivePeerDependencies:
       - supports-color
@@ -1501,11 +1505,21 @@ packages:
       graceful-fs: 4.2.10
     dev: true
 
+  /just-remove/3.2.0:
+    resolution: {integrity: sha512-gR3EOFIkZapF3g0K4IRRqH4lM+czJEfaOFgrwZl5vNfVUeJqfke9/L67Mf3CgnT3j2HM46C+mdCRvqaCD77Nqg==}
+
+  /just-safe-get/4.2.0:
+    resolution: {integrity: sha512-+tS4Bvgr/FnmYxOGbwziJ8I2BFk+cP1gQHm6rm7zo61w1SbxBwWGEq/Ryy9Gb6bvnloPq6pz7Bmm4a0rjTNlXA==}
+
+  /just-safe-set/4.2.1:
+    resolution: {integrity: sha512-La5CP41Ycv52+E4g7w1sRV8XXk7Sp8a/TwWQAYQKn6RsQz1FD4Z/rDRRmqV3wJznS1MDF3YxK7BCudX1J8FxLg==}
+    dev: true
+
   /light-my-request/5.9.1:
     resolution: {integrity: sha512-UT7pUk8jNCR1wR7w3iWfIjx32DiB2f3hFdQSOwy3/EPQ3n3VocyipUxcyRZR0ahoev+fky69uA+GejPa9KuHKg==}
     dependencies:
       cookie: 0.5.0
-      process-warning: 2.1.0
+      process-warning: 2.2.0
       set-cookie-parser: 2.5.1
     dev: false
 
@@ -1522,9 +1536,6 @@ packages:
     resolution: {integrity: sha512-iyT2MXws+dc2Wi6o3grCFtGXpeMvHmJqS27sMPGtV2eUu4PeFnG+33I8BlFK1t1NWMjOpcx9bridn5yxLDX2gQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
-
-  /lodash-es/4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
 
   /lodash.sortby/4.7.0:
     resolution: {integrity: sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==}
@@ -1714,8 +1725,8 @@ packages:
     resolution: {integrity: sha512-KO0m2f1HkrPe9S0ldjx7za9BJjeHqBku5Ch8JyxETxT8dEFGz1PwgrHaOQupVYitpzbFSYm7nnljxD8dik2c+g==}
     dev: false
 
-  /pino/8.11.0:
-    resolution: {integrity: sha512-Z2eKSvlrl2rH8p5eveNUnTdd4AjJk8tAsLkHYZQKGHP4WTh2Gi1cOSOs3eWPqaj+niS3gj4UkoreoaWgF3ZWYg==}
+  /pino/8.14.1:
+    resolution: {integrity: sha512-8LYNv7BKWXSfS+k6oEc6occy5La+q2sPwU3q2ljTX5AZk7v+5kND2o5W794FyRaqha6DJajmkNRsWtPpFyMUdw==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
@@ -1723,7 +1734,7 @@ packages:
       on-exit-leak-free: 2.1.0
       pino-abstract-transport: 1.0.0
       pino-std-serializers: 6.1.0
-      process-warning: 2.1.0
+      process-warning: 2.2.0
       quick-format-unescaped: 4.0.4
       real-require: 0.2.0
       safe-stable-stringify: 2.4.2
@@ -1761,8 +1772,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /process-warning/2.1.0:
-    resolution: {integrity: sha512-9C20RLxrZU/rFnxWncDkuF6O999NdIf3E1ws4B0ZeY3sRVPzWBMsYDE2lxjxhiXxg464cQTgKUGm8/i6y2YGXg==}
+  /process-warning/2.2.0:
+    resolution: {integrity: sha512-/1WZ8+VQjR6avWOgHeEPd7SDQmFQ1B5mC1eRXsCm5TarlNmx/wCsa5GEaxGm05BORRtyG/Ex/3xq3TuRvq57qg==}
     dev: false
 
   /process/0.11.10:
@@ -1896,8 +1907,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver/7.3.8:
-    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
+  /semver/7.5.1:
+    resolution: {integrity: sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -1945,14 +1956,14 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /solid-js/1.7.5:
-    resolution: {integrity: sha512-GfJ8na1e9FG1oAF5xC24BM+ATLym0sfH+ZblkbBFpueYdq3fWAoA5Ve+jGeIeLI7jmMGfa0rUaKruszNm2sH8w==}
+  /solid-js/1.7.6:
+    resolution: {integrity: sha512-DXVOTjUh/bIAhE0fIqu3ezGLyQaez7v8EOw3uPLIi87DmLjg+hsuCAgKyNIZ+o4jUetOk3ZORccvJmE1yZUk8g==}
     dependencies:
       csstype: 3.1.1
       seroval: 0.5.1
     dev: true
 
-  /solid-refresh/0.5.2_solid-js@1.7.5:
+  /solid-refresh/0.5.2_solid-js@1.7.6:
     resolution: {integrity: sha512-I69HmFj0LsGRJ3n8CEMVjyQFgVtuM2bSjznu2hCnsY+i5oOxh8ioWj00nnHBv0UYD3WpE/Sq4Q3TNw2IKmKN7A==}
     peerDependencies:
       solid-js: ^1.3
@@ -1960,7 +1971,7 @@ packages:
       '@babel/generator': 7.21.1
       '@babel/helper-module-imports': 7.18.6
       '@babel/types': 7.21.2
-      solid-js: 1.7.5
+      solid-js: 1.7.6
     dev: true
 
   /sonic-boom/3.2.1:
@@ -2141,65 +2152,65 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /turbo-darwin-64/1.10.0:
-    resolution: {integrity: sha512-N0aVGFtBgOKd7pIdUiKREwnDhNHRIvpMJbmUw04c1AqEoTiKAKT6iuzcCozO5N/gYMVr0hxrXgLal5OLYXtcsw==}
+  /turbo-darwin-64/1.10.3:
+    resolution: {integrity: sha512-IIB9IomJGyD3EdpSscm7Ip1xVWtYb7D0x7oH3vad3gjFcjHJzDz9xZ/iw/qItFEW+wGFcLSRPd+1BNnuLM8AsA==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64/1.10.0:
-    resolution: {integrity: sha512-boXzhaHTS5MsTMv48I/JmYp9/fYplXk5nACUDrqV6nD1hzO5PMn5wNg75ATbpkaMaeuD+hjuobeSxn1p4vpqQg==}
+  /turbo-darwin-arm64/1.10.3:
+    resolution: {integrity: sha512-SBNmOZU9YEB0eyNIxeeQ+Wi0Ufd+nprEVp41rgUSRXEIpXjsDjyBnKnF+sQQj3+FLb4yyi/yZQckB+55qXWEsw==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64/1.10.0:
-    resolution: {integrity: sha512-crKQuS1jrp4vp+Th6EmUqqmAlvYNnzGmwWMLeckmYILrV7zAddu87eJu4hB7V6uV+W1qHZUTw8WXa1w1+8boBw==}
+  /turbo-linux-64/1.10.3:
+    resolution: {integrity: sha512-kvAisGKE7xHJdyMxZLvg53zvHxjqPK1UVj4757PQqtx9dnjYHSc8epmivE6niPgDHon5YqImzArCjVZJYpIGHQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64/1.10.0:
-    resolution: {integrity: sha512-Y2fhWe0xepLjl7doIvsJK7mp2h8E+OF6qJsUHRgxFeRWQWi1I6clD2aEQeykHK8Tp+qp8pKFMocj32nFBvuCcg==}
+  /turbo-linux-arm64/1.10.3:
+    resolution: {integrity: sha512-Qgaqln0IYRgyL0SowJOi+PNxejv1I2xhzXOI+D+z4YHbgSx87ox1IsALYBlK8VRVYY8VCXl+PN12r1ioV09j7A==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64/1.10.0:
-    resolution: {integrity: sha512-uh8rEqH6teaHysEMjinwWBqyNwv4IvgSAwbq/OphP8jObstTYHoR+gFPo8RQUSTaBYy4QVszgi5eO5YLvEQqNA==}
+  /turbo-windows-64/1.10.3:
+    resolution: {integrity: sha512-rbH9wManURNN8mBnN/ZdkpUuTvyVVEMiUwFUX4GVE5qmV15iHtZfDLUSGGCP2UFBazHcpNHG1OJzgc55GFFrUw==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64/1.10.0:
-    resolution: {integrity: sha512-JaVj3iM7qyRD6xYGZLL/Gs4mQKfM1zL0f91AwHZLNkk1CrJ6i5kO4ZjhKkwXSpVOTNKW3sX0Q7dExXj85Vv7UQ==}
+  /turbo-windows-arm64/1.10.3:
+    resolution: {integrity: sha512-ThlkqxhcGZX39CaTjsHqJnqVe+WImjX13pmjnpChz6q5HHbeRxaJSFzgrHIOt0sUUVx90W/WrNRyoIt/aafniw==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo/1.10.0:
-    resolution: {integrity: sha512-GWxoL2zJduiNaEHz78o74l2jCQEeuUZ3MdpMPz0SpZOvt3nimpvQPNxiyfbqt3U9/V5G375PWKYSbXkVnIbQcA==}
+  /turbo/1.10.3:
+    resolution: {integrity: sha512-U4gKCWcKgLcCjQd4Pl8KJdfEKumpyWbzRu75A6FCj6Ctea1PIm58W6Ltw1QXKqHrl2pF9e1raAskf/h6dlrPCA==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.10.0
-      turbo-darwin-arm64: 1.10.0
-      turbo-linux-64: 1.10.0
-      turbo-linux-arm64: 1.10.0
-      turbo-windows-64: 1.10.0
-      turbo-windows-arm64: 1.10.0
+      turbo-darwin-64: 1.10.3
+      turbo-darwin-arm64: 1.10.3
+      turbo-linux-64: 1.10.3
+      turbo-linux-arm64: 1.10.3
+      turbo-windows-64: 1.10.3
+      turbo-windows-arm64: 1.10.3
     dev: true
 
   /type-fest/2.19.0:
@@ -2251,7 +2262,7 @@ packages:
     resolution: {integrity: sha512-T1ab131NkP3BfXB7KUSgV7Rhu81R2id+L6NaJ7NypAAG5iV6gXnPpQE5RK1fvb+3JYsPTL+ihWna5sr5RN9gaQ==}
     dev: true
 
-  /vite-plugin-solid/2.7.0_solid-js@1.7.5+vite@4.3.9:
+  /vite-plugin-solid/2.7.0_solid-js@1.7.6+vite@4.3.9:
     resolution: {integrity: sha512-avp/Jl5zOp/Itfo67xtDB2O61U7idviaIp4mLsjhCa13PjKNasz+IID0jYTyqUp9SFx6/PmBr6v4KgDppqompg==}
     peerDependencies:
       solid-js: ^1.7.2
@@ -2262,8 +2273,8 @@ packages:
       '@types/babel__core': 7.20.1
       babel-preset-solid: 1.7.4_@babel+core@7.21.0
       merge-anything: 5.1.4
-      solid-js: 1.7.5
-      solid-refresh: 0.5.2_solid-js@1.7.5
+      solid-js: 1.7.6
+      solid-refresh: 0.5.2_solid-js@1.7.6
       vite: 4.3.9
       vitefu: 0.2.4_vite@4.3.9
     transitivePeerDependencies:

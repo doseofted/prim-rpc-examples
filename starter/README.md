@@ -1,6 +1,6 @@
 # Interactive Starter Project
 
-<!-- [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/starter) -->
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/starter)
 
 > **Warning** This is not a full example in itself. It is intended to act as a
 > starting point for the

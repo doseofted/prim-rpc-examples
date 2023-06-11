@@ -9,10 +9,10 @@
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.3",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.2"
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.3"
 	},
 	"devDependencies": {
-		"solid-js": "^1.7.5",
+		"solid-js": "^1.7.6",
 		"typescript": "^5.0.4",
 		"vite": "^4.3.9",
 		"vite-plugin-solid": "^2.7.0"

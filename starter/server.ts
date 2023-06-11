@@ -23,6 +23,7 @@ fastify.get<{ Querystring: { x: string; y: string } }>(
 		reply.send(message)
 	}
 )
+fastify.get("/health", () => "ok") // simple health check
 
 // NOTE: Prim+RPC server setup will go here
 
