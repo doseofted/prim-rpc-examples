@@ -8,3 +8,4 @@ packages:
   - "custom-handler"
   - "server-context"
   - "fullstack-framework"
+  - "serverless"
