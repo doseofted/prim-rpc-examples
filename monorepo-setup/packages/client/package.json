@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.3",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.3",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.4",
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.3",
 		"monorepo-module": "workspace:*",
 		"solid-js": "^1.7.6",

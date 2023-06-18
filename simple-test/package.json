@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.3",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.3"
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.4"
 	},
 	"stackblitz": {
 		"installDependencies": false,
