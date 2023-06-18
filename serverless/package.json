@@ -1,18 +1,26 @@
 {
-	"name": "web-worker",
+	"name": "client-server",
 	"version": "0.0.1",
 	"license": "UNLICENSED",
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"start": "vite dev"
+		"serve": "tsx watch --clear-screen=false server/index.ts",
+		"client": "vite dev",
+		"start": "concurrently \"npm:serve\" \"npm:client\""
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.3",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.5"
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.5",
+		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.3",
+		"hono": "^3.2.5"
 	},
 	"devDependencies": {
+		"@hono/node-server": "^1.0.2",
+		"@types/ws": "^8.5.5",
+		"concurrently": "^8.2.0",
 		"solid-js": "^1.7.6",
+		"tsx": "^3.12.7",
 		"typescript": "^5.0.4",
 		"vite": "^4.3.9",
 		"vite-plugin-solid": "^2.7.0"

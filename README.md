@@ -7,6 +7,7 @@ Examples of Prim+RPC usage. Referenced in
 
 - [Simple Testing](./simple-test/)
 - [Client/Server Example](./client-server/)
+- [Serverless](./serverless/)
 - [Web Worker](./web-worker)
 - [Monorepo Setup](./monorepo-setup)
 - [Custom JSON Handler](./custom-handler)
