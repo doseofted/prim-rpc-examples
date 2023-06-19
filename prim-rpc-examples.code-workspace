@@ -13,6 +13,10 @@
 			"path": "./client-server"
 		},
 		{
+			"name": "Serverless",
+			"path": "./serverless"
+		},
+		{
 			"name": "Web Worker",
 			"path": "./web-worker"
 		},
