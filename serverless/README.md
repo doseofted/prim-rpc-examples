@@ -2,6 +2,10 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/doseofted/prim-rpc-examples/tree/main/serverless)
 
+> **Warning**: This example requires Node 18+ (due to Hono's usage of
+> Request/Response). Stackblitz uses Node 16 as of June 2023 and cannot yet run
+> this example. Download the project locally to run this example.
+
 In this example, a web server and web browser are bridged with Prim+RPC.
 
 The web server ([`server/index.ts`](./server/index.ts)) is pre-configured to use
