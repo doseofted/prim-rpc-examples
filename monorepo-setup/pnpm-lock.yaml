@@ -10,8 +10,8 @@ importers:
 
   packages/client:
     specifiers:
-      '@doseofted/prim-rpc': 0.1.0-alpha.3
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3
+      '@doseofted/prim-rpc': 0.1.0-alpha.4
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.5
       '@doseofted/prim-rpc-tooling': 0.1.0-alpha.3
       monorepo-module: workspace:*
       solid-js: ^1.7.6
@@ -19,8 +19,8 @@ importers:
       vite: ^4.3.9
       vite-plugin-solid: ^2.7.0
     devDependencies:
-      '@doseofted/prim-rpc': 0.1.0-alpha.3
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3
+      '@doseofted/prim-rpc': 0.1.0-alpha.4
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.5
       '@doseofted/prim-rpc-tooling': 0.1.0-alpha.3
       monorepo-module: link:../module
       solid-js: 1.7.6
@@ -38,8 +38,8 @@ importers:
 
   packages/server:
     specifiers:
-      '@doseofted/prim-rpc': 0.1.0-alpha.3
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3
+      '@doseofted/prim-rpc': 0.1.0-alpha.4
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.5
       '@fastify/cors': ^8.3.0
       '@types/ws': ^8.5.5
       fastify: ^4.18.0
@@ -48,8 +48,8 @@ importers:
       typescript: ^5.0.4
       ws: ^8.13.0
     dependencies:
-      '@doseofted/prim-rpc': 0.1.0-alpha.3
-      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.3_fastify@4.18.0+ws@8.13.0
+      '@doseofted/prim-rpc': 0.1.0-alpha.4
+      '@doseofted/prim-rpc-plugins': 0.1.0-alpha.5
       '@fastify/cors': 8.3.0
       fastify: 4.18.0
       monorepo-module: link:../module
@@ -378,13 +378,14 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@doseofted/prim-rpc-plugins/0.1.0-alpha.3:
-    resolution: {integrity: sha512-LWev55OO7DFZssZdmUSFVTNa70XtFDN5w83PqP7w4ZAjNI5NHPxWjqdZOmLIxr7jO4SL8cEHq2dAvWyYjpK3Vg==}
+  /@doseofted/prim-rpc-plugins/0.1.0-alpha.5:
+    resolution: {integrity: sha512-IuY+GtgtFHWWr6IpvQFJzC8xjw1etZiEHeL3r1PoNe4dogZSml1KwOFooKWhW5+5KZDFfuFIm+AN64NJIY9vtQ==}
     peerDependencies:
       axios: 1.x
       express: 4.x
       fastify: 4.x
       h3: 1.x
+      hono: 3.x
       next: 13.x
       ws: 8.x
     peerDependenciesMeta:
@@ -396,6 +397,8 @@ packages:
         optional: true
       h3:
         optional: true
+      hono:
+        optional: true
       next:
         optional: true
       ws:
@@ -403,36 +406,6 @@ packages:
     dependencies:
       mitt: 3.0.0
       nanoid: 4.0.2
-    dev: true
-
-  /@doseofted/prim-rpc-plugins/0.1.0-alpha.3_fastify@4.18.0+ws@8.13.0:
-    resolution: {integrity: sha512-LWev55OO7DFZssZdmUSFVTNa70XtFDN5w83PqP7w4ZAjNI5NHPxWjqdZOmLIxr7jO4SL8cEHq2dAvWyYjpK3Vg==}
-    peerDependencies:
-      axios: 1.x
-      express: 4.x
-      fastify: 4.x
-      h3: 1.x
-      next: 13.x
-      ws: 8.x
-    peerDependenciesMeta:
-      axios:
-        optional: true
-      express:
-        optional: true
-      fastify:
-        optional: true
-      h3:
-        optional: true
-      next:
-        optional: true
-      ws:
-        optional: true
-    dependencies:
-      fastify: 4.18.0
-      mitt: 3.0.0
-      nanoid: 4.0.2
-      ws: 8.13.0
-    dev: false
 
   /@doseofted/prim-rpc-tooling/0.1.0-alpha.3:
     resolution: {integrity: sha512-C2pDHlXKmX04o0tzTVjVVmubr+LsctsS/UBn9YfcxdDJKnZeYAuaBG6mJljOCn0vPMqXM5g0p5xbQ8R2Am6s6Q==}
@@ -443,10 +416,11 @@ packages:
       zx: 7.2.2
     dev: true
 
-  /@doseofted/prim-rpc/0.1.0-alpha.3:
-    resolution: {integrity: sha512-SdgjmGVQqyaikAGfmtm3Dw8wRAMBKJuwofrFziMcfOMU4Tx6ufC5ZtvaoS94lwaoDjl6qVVrUp/gIYF/novJ5g==}
+  /@doseofted/prim-rpc/0.1.0-alpha.4:
+    resolution: {integrity: sha512-6x4Hi23bXWOCq8kYO1XbXFGluDE3vkvxLGV8mf4BcHBuSnHE1TSo1+Takbgg8tjaw5i2CHHGGtRT9lcckPMU9w==}
     dependencies:
       defu: 6.1.2
+      destr: 2.0.0
       just-remove: 3.2.0
       just-safe-get: 4.2.0
       mitt: 3.0.0
@@ -454,7 +428,7 @@ packages:
       proxy-deep: 3.1.1
       query-string: 8.1.0
       serialize-error: 11.0.0
-      type-fest: 3.11.1
+      type-fest: 3.12.0
 
   /@esbuild-kit/cjs-loader/2.4.2:
     resolution: {integrity: sha512-BDXFbYOJzT/NBEtp71cvsrGPwGAMGRB/349rwKuoxNSiKjPraNNnlK6MIIabViCjqZugu6j+xeMDlEkWdHHJSg==}
@@ -1087,6 +1061,9 @@ packages:
 
   /defu/6.1.2:
     resolution: {integrity: sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==}
+
+  /destr/2.0.0:
+    resolution: {integrity: sha512-FJ9RDpf3GicEBvzI3jxc2XhHzbqD8p4ANw/1kPsFBfTvP1b7Gn/Lg1vO7R9J4IVgoMbyUmFrFGZafJ1hPZpvlg==}
 
   /dir-glob/3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
@@ -2217,8 +2194,8 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  /type-fest/3.11.1:
-    resolution: {integrity: sha512-aCuRNRERRVh33lgQaJRlUxZqzfhzwTrsE98Mc3o3VXqmiaQdHacgUtJ0esp+7MvZ92qhtzKPeusaX6vIEcoreA==}
+  /type-fest/3.12.0:
+    resolution: {integrity: sha512-qj9wWsnFvVEMUDbESiilKeXeHL7FwwiFcogfhfyjmvT968RXSvnl23f1JOClTHYItsi7o501C/7qVllscUP3oA==}
     engines: {node: '>=14.16'}
 
   /typescript/5.0.4:
