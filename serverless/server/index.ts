@@ -24,13 +24,6 @@ createPrimServer({
 	methodHandler,
 })
 
-// if testing project locally, start a local Node.js server for testing
-if (typeof process !== "undefined" && typeof process?.env?.NODE === "string") {
-	const { serve } = await import("@hono/node-server")
-	serve(app).listen(3001)
-	console.log("Serving", `http://localhost:3001`)
-}
-
 // export app to be used from serverless environment
 export default app
 

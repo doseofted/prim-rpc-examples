@@ -17,7 +17,7 @@ import { render } from "solid-js/web"
 
 // Setup the Prim+RPC client and give it the endpoint of the configured server
 const backend = createPrimClient<typeof module>({
-	endpoint: "http://website.localhost:3001/",
+	endpoint: "http://website.localhost:3001/", // replace with worker URL once deployed
 	methodPlugin: createMethodPlugin(),
 	callbackPlugin: createCallbackPlugin(),
 })
