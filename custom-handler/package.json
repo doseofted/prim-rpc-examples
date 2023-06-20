@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.5",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.7",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.8",
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.4",
 		"cors": "^2.8.5",
 		"express": "^4.18.2",
