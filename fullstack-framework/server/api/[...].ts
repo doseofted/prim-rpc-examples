@@ -3,12 +3,12 @@ import { createPrimServer } from "@doseofted/prim-rpc"
 // And import plugins for intended server (we'll be using `h3` which powers Nuxt's Nitro server)
 import { defineH3PrimHandler } from "@doseofted/prim-rpc-plugins/h3"
 // Now import your JavaScript code to be used with Prim+RPC
-import module from "@/hello"
+import * as myModule from "@/hello"
 
 // Now create the Prim+RPC with the configured module and plugin for our server
 const prim = createPrimServer({
 	prefix: "/api/prim",
-	module,
+	module: myModule,
 })
 
 // Unlike previous examples, we don't need to give the Prim+RPC server a method handler.

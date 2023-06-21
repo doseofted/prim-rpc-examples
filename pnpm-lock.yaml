@@ -24,8 +24,8 @@ importers:
         specifier: ^2.8.8
         version: 2.8.8
       turbo:
-        specifier: ^1.10.3
-        version: 1.10.3
+        specifier: ^1.10.4
+        version: 1.10.4
       typescript:
         specifier: ^5.1.3
         version: 5.1.3
@@ -33,11 +33,11 @@ importers:
   client-server:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(fastify@4.18.0)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(fastify@4.18.0)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
         specifier: 0.1.0-alpha.4
         version: 0.1.0-alpha.4
@@ -76,11 +76,11 @@ importers:
   custom-handler:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(express@4.18.2)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
         specifier: 0.1.0-alpha.4
         version: 0.1.0-alpha.4
@@ -128,11 +128,11 @@ importers:
   fullstack-framework:
     devDependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(express@4.18.2)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
         specifier: 0.1.0-alpha.4
         version: 0.1.0-alpha.4
@@ -146,17 +146,17 @@ importers:
   monorepo-setup:
     devDependencies:
       turbo:
-        specifier: ^1.10.3
-        version: 1.10.3
+        specifier: ^1.10.4
+        version: 1.10.4
 
   monorepo-setup/packages/client:
     devDependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(express@4.18.2)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
         specifier: 0.1.0-alpha.4
         version: 0.1.0-alpha.4
@@ -188,11 +188,11 @@ importers:
   monorepo-setup/packages/server:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(fastify@4.18.0)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(fastify@4.18.0)(ws@8.13.0)
       '@fastify/cors':
         specifier: ^8.3.0
         version: 8.3.0
@@ -219,11 +219,11 @@ importers:
   server-context:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(fastify@4.18.0)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(fastify@4.18.0)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
         specifier: 0.1.0-alpha.4
         version: 0.1.0-alpha.4
@@ -265,11 +265,11 @@ importers:
   serverless:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(hono@3.2.5)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(hono@3.2.5)
       '@doseofted/prim-rpc-tooling':
         specifier: 0.1.0-alpha.4
         version: 0.1.0-alpha.4
@@ -305,11 +305,11 @@ importers:
   simple-test:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(express@4.18.2)(ws@8.13.0)
 
   starter:
     dependencies:
@@ -342,11 +342,11 @@ importers:
   web-worker:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.5
-        version: 0.1.0-alpha.5
+        specifier: 0.1.0-alpha.6
+        version: 0.1.0-alpha.6
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.8
-        version: 0.1.0-alpha.8(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.9
+        version: 0.1.0-alpha.9(express@4.18.2)(ws@8.13.0)
     devDependencies:
       solid-js:
         specifier: ^1.7.6
@@ -723,8 +723,8 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@doseofted/prim-rpc-plugins@0.1.0-alpha.8(express@4.18.2)(ws@8.13.0):
-    resolution: {integrity: sha512-ew/+GRPe5voFH1RxCDuoLt7B/wlGBZouCT64wPP6ytsTwDUmRM588xi80P/Ik0ufAdO+E8lHocB61plfFBIG+g==}
+  /@doseofted/prim-rpc-plugins@0.1.0-alpha.9(express@4.18.2)(ws@8.13.0):
+    resolution: {integrity: sha512-kT4Oaa/WfRxacxeMVtdR8VhoBh1P/VvcsEBcUbUcxW5bS5Fc7Qg1YupYJQruAZPWdOiAZSa+zlzFhiZp+685ZQ==}
     peerDependencies:
       axios: 1.x
       express: 4.x
@@ -754,8 +754,8 @@ packages:
       nanoid: 4.0.2
       ws: 8.13.0
 
-  /@doseofted/prim-rpc-plugins@0.1.0-alpha.8(fastify@4.18.0)(ws@8.13.0):
-    resolution: {integrity: sha512-ew/+GRPe5voFH1RxCDuoLt7B/wlGBZouCT64wPP6ytsTwDUmRM588xi80P/Ik0ufAdO+E8lHocB61plfFBIG+g==}
+  /@doseofted/prim-rpc-plugins@0.1.0-alpha.9(fastify@4.18.0)(ws@8.13.0):
+    resolution: {integrity: sha512-kT4Oaa/WfRxacxeMVtdR8VhoBh1P/VvcsEBcUbUcxW5bS5Fc7Qg1YupYJQruAZPWdOiAZSa+zlzFhiZp+685ZQ==}
     peerDependencies:
       axios: 1.x
       express: 4.x
@@ -786,8 +786,8 @@ packages:
       ws: 8.13.0
     dev: false
 
-  /@doseofted/prim-rpc-plugins@0.1.0-alpha.8(hono@3.2.5):
-    resolution: {integrity: sha512-ew/+GRPe5voFH1RxCDuoLt7B/wlGBZouCT64wPP6ytsTwDUmRM588xi80P/Ik0ufAdO+E8lHocB61plfFBIG+g==}
+  /@doseofted/prim-rpc-plugins@0.1.0-alpha.9(hono@3.2.5):
+    resolution: {integrity: sha512-kT4Oaa/WfRxacxeMVtdR8VhoBh1P/VvcsEBcUbUcxW5bS5Fc7Qg1YupYJQruAZPWdOiAZSa+zlzFhiZp+685ZQ==}
     peerDependencies:
       axios: 1.x
       express: 4.x
@@ -825,8 +825,8 @@ packages:
       unplugin: 1.3.1
       zx: 7.2.2
 
-  /@doseofted/prim-rpc@0.1.0-alpha.5:
-    resolution: {integrity: sha512-Ebyem904CsoEI5Z8BoL4oQ+tP4ouquXKQprxoNgfsENxgaPltwPRHTf//hS4dX4Ati4smcUnssnLV5sLneECmg==}
+  /@doseofted/prim-rpc@0.1.0-alpha.6:
+    resolution: {integrity: sha512-XL4Pm39/vRwxcwoKCC2bpFbKGYBQ3ZgZf4zpuFp5BJVulhqxyy1xpWPOpiRz3q9eoVVu2CKNXFcwBa7Pa/zcVw==}
     dependencies:
       defu: 6.1.2
       destr: 2.0.0
@@ -6282,65 +6282,65 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /turbo-darwin-64@1.10.3:
-    resolution: {integrity: sha512-IIB9IomJGyD3EdpSscm7Ip1xVWtYb7D0x7oH3vad3gjFcjHJzDz9xZ/iw/qItFEW+wGFcLSRPd+1BNnuLM8AsA==}
+  /turbo-darwin-64@1.10.4:
+    resolution: {integrity: sha512-oAILq0QZUvOxYZU71SXRsL7DFpqZutPl9CX7+rD48tReHrmhcm3HMeuAFY0S5FD/9fKub04UfAQwVtJSlhvISg==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64@1.10.3:
-    resolution: {integrity: sha512-SBNmOZU9YEB0eyNIxeeQ+Wi0Ufd+nprEVp41rgUSRXEIpXjsDjyBnKnF+sQQj3+FLb4yyi/yZQckB+55qXWEsw==}
+  /turbo-darwin-arm64@1.10.4:
+    resolution: {integrity: sha512-N0XPFLXsZRLE6gKDa5MREpPQp0drOz9PrADaaMXTlspxWS/tmmxyH+ZQ/uGqKC/0mqsNIhZuSFsEVZe1PGaqxw==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64@1.10.3:
-    resolution: {integrity: sha512-kvAisGKE7xHJdyMxZLvg53zvHxjqPK1UVj4757PQqtx9dnjYHSc8epmivE6niPgDHon5YqImzArCjVZJYpIGHQ==}
+  /turbo-linux-64@1.10.4:
+    resolution: {integrity: sha512-S8ZVNCPnrBU+GMKKUWcgg4MaTOdL1reOU1XQtDiHfEPskXjLE+10vr65xJJQb6CqO8ARFXUlFSAUfxZRX6WVNA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64@1.10.3:
-    resolution: {integrity: sha512-Qgaqln0IYRgyL0SowJOi+PNxejv1I2xhzXOI+D+z4YHbgSx87ox1IsALYBlK8VRVYY8VCXl+PN12r1ioV09j7A==}
+  /turbo-linux-arm64@1.10.4:
+    resolution: {integrity: sha512-/C6vpo7kd2ae6dR0iZyRuvfjijuixidhwLzV026A+/1gmAMRXYkslBfgOGfoOquHmvqjCeDVTsMWwCY2NRQqtw==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64@1.10.3:
-    resolution: {integrity: sha512-rbH9wManURNN8mBnN/ZdkpUuTvyVVEMiUwFUX4GVE5qmV15iHtZfDLUSGGCP2UFBazHcpNHG1OJzgc55GFFrUw==}
+  /turbo-windows-64@1.10.4:
+    resolution: {integrity: sha512-fh6X/fJl9gNTu3r7zMmwCychxMlpQMFn32bpioPNIBxrTHCbQYeGSQuw2XWa/RswgNzCY3Xo34emYAKu9btrsw==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64@1.10.3:
-    resolution: {integrity: sha512-ThlkqxhcGZX39CaTjsHqJnqVe+WImjX13pmjnpChz6q5HHbeRxaJSFzgrHIOt0sUUVx90W/WrNRyoIt/aafniw==}
+  /turbo-windows-arm64@1.10.4:
+    resolution: {integrity: sha512-KzcKGl+bjwaSkxMNTutuoIM+xPuTBA13zJiC2vFM7fQ6XYM0/ZmUekfoxpMnWgSav8vlTk5tRYaPniLcVzLnTQ==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo@1.10.3:
-    resolution: {integrity: sha512-U4gKCWcKgLcCjQd4Pl8KJdfEKumpyWbzRu75A6FCj6Ctea1PIm58W6Ltw1QXKqHrl2pF9e1raAskf/h6dlrPCA==}
+  /turbo@1.10.4:
+    resolution: {integrity: sha512-EVBt762wVGyZAXtp1UWQptRG2N/9TThUJ1tRawvt/pmB62VmdzgDuz80SQYXK5U5yKEID6OJdqAzq8HnIQVA6g==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.10.3
-      turbo-darwin-arm64: 1.10.3
-      turbo-linux-64: 1.10.3
-      turbo-linux-arm64: 1.10.3
-      turbo-windows-64: 1.10.3
-      turbo-windows-arm64: 1.10.3
+      turbo-darwin-64: 1.10.4
+      turbo-darwin-arm64: 1.10.4
+      turbo-linux-64: 1.10.4
+      turbo-linux-arm64: 1.10.4
+      turbo-windows-64: 1.10.4
+      turbo-windows-arm64: 1.10.4
     dev: true
 
   /type-check@0.4.0:

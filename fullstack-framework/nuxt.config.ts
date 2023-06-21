@@ -4,6 +4,8 @@ import preventImport from "@doseofted/prim-rpc-tooling/build"
 
 export default defineNuxtConfig({
 	vite: {
-		plugins: [preventImport.vite({ name: path.join(__dirname, "hello") })],
+		// NOTE: This will keep accidental imports out of client bundle (Nitro bundle is unaffected)
+		// TODO: ^^^ make sure that Nitro is unaffected
+		// plugins: [preventImport.vite({ name: path.join(__dirname, "hello") })],
 	},
 })

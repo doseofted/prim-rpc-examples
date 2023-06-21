@@ -1,8 +1,6 @@
 <template>
-  <p v-if="!pending">
-    <!-- Check if promise has resolved (pending === false) and then display returned value -->
-    {{ greeting }}
-  </p>
+  <p>{{ greeting }}</p>
+  <NuxtLink :to="`?x=${y}&y=${x}`">Reverse</NuxtLink>
 </template>
 
 <script lang="ts" setup>
@@ -10,11 +8,15 @@
 const route = useRoute()
 const x = computed(() => route.query.x?.toString() ?? "Backend")
 const y = computed(() => route.query.y?.toString() ?? "Frontend")
-// Make a function call using Prim+RPC (`useAsyncData` is Nuxt's way of handling returned promise)
-// Optionally, pass references to `useAsyncData`'s `.watch` if you'd like to automatically refetch on value changes
-const { data: greeting, pending } = useAsyncData(() => backend.sayHello(x.value, y.value), {
-  watch: [x, y]
-})
+
+const { data: greeting } = useAsyncData(
+  // Make a function call using Prim+RPC (`useAsyncData` is Nuxt's way of handling returned promise)
+  () => backend.sayHello(x.value, y.value),
+  // Optionally, pass references to `.watch` option of `useAsyncData` if you'd like to refetch on value changes
+  { watch: [x, y] }
+)
+
+useHead({ title: greeting })
 </script>
 
 <style>
@@ -28,5 +30,9 @@ html {
   font-size: 2rem;
   font-family: sans-serif;
   text-align: center;
+}
+
+a {
+  color: #aaa;
 }
 </style>
