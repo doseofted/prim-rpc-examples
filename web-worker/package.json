@@ -8,8 +8,8 @@
 		"start": "vite dev"
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.6",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.9"
+		"@doseofted/prim-rpc": "0.1.0-alpha.10",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.11"
 	},
 	"devDependencies": {
 		"solid-js": "^1.7.6",
