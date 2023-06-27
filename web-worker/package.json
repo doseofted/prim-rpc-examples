@@ -8,7 +8,7 @@
 		"start": "vite dev"
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.10",
+		"@doseofted/prim-rpc": "0.1.0-alpha.11",
 		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.11"
 	},
 	"devDependencies": {

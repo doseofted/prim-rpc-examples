@@ -33,8 +33,8 @@ importers:
   client-server:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(fastify@4.18.0)(ws@8.13.0)
@@ -76,8 +76,8 @@ importers:
   custom-handler:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(express@4.18.2)(ws@8.13.0)
@@ -177,8 +177,8 @@ importers:
   fullstack-framework:
     devDependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(express@4.18.2)(ws@8.13.0)
@@ -201,8 +201,8 @@ importers:
   monorepo-setup/packages/client:
     devDependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(express@4.18.2)(ws@8.13.0)
@@ -237,8 +237,8 @@ importers:
   monorepo-setup/packages/server:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(fastify@4.18.0)(ws@8.13.0)
@@ -268,8 +268,8 @@ importers:
   server-context:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(fastify@4.18.0)(ws@8.13.0)
@@ -314,8 +314,8 @@ importers:
   serverless:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(hono@3.2.5)
@@ -354,8 +354,8 @@ importers:
   simple-test:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(express@4.18.2)(ws@8.13.0)
@@ -391,8 +391,8 @@ importers:
   web-worker:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.10
-        version: 0.1.0-alpha.10
+        specifier: 0.1.0-alpha.11
+        version: 0.1.0-alpha.11
       '@doseofted/prim-rpc-plugins':
         specifier: 0.1.0-alpha.11
         version: 0.1.0-alpha.11(express@4.18.2)(ws@8.13.0)
@@ -876,6 +876,21 @@ packages:
 
   /@doseofted/prim-rpc@0.1.0-alpha.10:
     resolution: {integrity: sha512-ct5jue4pOtimObDGQ5k/2q+/nUwAfYxtyLeARJcrgmbOcpb+qw2FLnnz7q5QfTsoVU+OFv1TYJsxbcYXQC+aqw==}
+    dependencies:
+      defu: 6.1.2
+      destr: 2.0.0
+      just-remove: 3.2.0
+      just-safe-get: 4.2.0
+      mitt: 3.0.0
+      nanoid: 4.0.2
+      proxy-deep: 3.1.1
+      query-string: 8.1.0
+      serialize-error: 11.0.0
+      type-fest: 3.12.0
+    dev: false
+
+  /@doseofted/prim-rpc@0.1.0-alpha.11:
+    resolution: {integrity: sha512-NuJ0Fxd8Cg+lTCNulf7d9hWGYmBFiyXGq/0hAb4Ju2chpjkkKirF5iCnvQnDmm4nVFo9hqn0kaym0Mddp6iOfg==}
     dependencies:
       defu: 6.1.2
       destr: 2.0.0
