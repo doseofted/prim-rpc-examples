@@ -27,6 +27,13 @@ corepack enable
 pnpm install
 ```
 
+## Other Examples
+
+The examples in this repository are kept short and simple. You may find more
+complete examples that use Prim+RPC below:
+
+- [Todo App in Nuxt](https://github.com/doseofted/todo-nuxt-prim-rpc-demo)
+
 ## License
 
 These example usages are licensed under the [MIT license](./LICENSE.md). Since
