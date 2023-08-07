@@ -16,10 +16,6 @@
 			"name": "Serverless",
 			"path": "./serverless"
 		},
-		// {
-		// 	"name": "File Upload",
-		// 	"path": "./file-upload"
-		// },
 		{
 			"name": "Web Worker",
 			"path": "./web-worker"

@@ -7,6 +7,7 @@ import type { module } from "./worker"
 import {
 	createMethodPlugin,
 	createCallbackPlugin,
+	jsonHandler
 } from "@doseofted/prim-rpc-plugins/web-worker"
 
 // Import Solid dependencies (this isn't Prim+RPC related, just for displaying results)
@@ -19,8 +20,8 @@ const worker = new Worker(new URL("./worker", import.meta.url), {
 })
 
 // Setup the Prim+RPC plugins with your worker
-const { methodPlugin, jsonHandler } = createMethodPlugin({ worker })
-const { callbackPlugin } = createCallbackPlugin({ worker })
+const methodPlugin = createMethodPlugin({ worker })
+const callbackPlugin = createCallbackPlugin({ worker })
 // Pass these plugins to the Prim+RPC client
 const workerClient = createPrimClient<typeof module>({
 	jsonHandler,

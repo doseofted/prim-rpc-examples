@@ -5,7 +5,7 @@ import { createMethodPlugin } from "@doseofted/prim-rpc-plugins/browser"
 
 // Setup the Prim+RPC client and give it the endpoint of the configured server
 // Also provide module type to generic parameter (since module type is possibly is null)
-export const backend = createPrimClient<typeof import("@/hello")>({
+export const backend = createPrimClient<Promise<typeof import("@/hello")>>({
 	module: process.server ? import("@/hello") : null,
 	endpoint: "/api/prim",
 	methodPlugin: createMethodPlugin(),

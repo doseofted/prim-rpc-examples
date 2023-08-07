@@ -3,7 +3,6 @@ packages:
   - "simple-test"
   - "client-server"
   - "serverless"
-  # - "file-upload"
   - "web-worker"
   - "monorepo-setup"
   - "monorepo-setup/packages/**"

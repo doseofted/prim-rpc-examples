@@ -8,11 +8,12 @@ import * as module from "./hello"
 import {
 	createCallbackHandler,
 	createMethodHandler,
+	jsonHandler
 } from "@doseofted/prim-rpc-plugins/web-worker"
 
 // Setup the handlers that will be used to communicate with the main thread
-const { methodHandler } = createMethodHandler({ worker: self })
-const { callbackHandler, jsonHandler } = createCallbackHandler({ worker: self })
+const methodHandler = createMethodHandler({ worker: self })
+const callbackHandler = createCallbackHandler({ worker: self })
 
 // Pass your module, configured handlers (including JSON handler) to the Prim+RPC client
 createPrimServer({
