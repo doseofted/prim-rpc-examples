@@ -10,9 +10,9 @@
 		"start": "concurrently \"npm:serve\" \"npm:client\""
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.14",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.12",
-		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.5",
+		"@doseofted/prim-rpc": "0.1.0-alpha.15",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.13",
+		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.6",
 		"@fastify/cors": "^8.3.0",
 		"fastify": "^4.21.0",
 		"ws": "^8.13.0"
@@ -23,7 +23,7 @@
 		"solid-js": "^1.7.9",
 		"tsx": "^3.12.7",
 		"typescript": "^5.1.6",
-		"vite": "^4.4.8",
+		"vite": "^4.4.9",
 		"vite-plugin-solid": "^2.7.0"
 	},
 	"stackblitz": {
