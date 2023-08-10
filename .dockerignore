@@ -1,0 +1,9 @@
+node_modules
+dist
+.turbo
+.nuxt
+.output
+
+/test-results/
+/playwright-report/
+/playwright/.cache/

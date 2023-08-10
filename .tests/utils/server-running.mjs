@@ -16,7 +16,7 @@ export async function checkServerRunning(process, isRunning) {
 		given.on("data", (data) => {
 			const running = isRunning(data.toString())
 			// console.log({ data: data.toString() })
-			// console.log(data.toString())
+			console.log(data.toString())
 			if (running) {
 				setTimeout(() => resolve(true), 300)
 			}

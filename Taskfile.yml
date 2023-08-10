@@ -1,0 +1,10 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: docker:test
+  test:docker:
+    cmds:
+      - docker build -f dev.Dockerfile -t=prim-rpc-examples-test .
+      - docker run -p 9323:9323 --rm prim-rpc-examples-test

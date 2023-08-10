@@ -8,14 +8,15 @@
 	},
 	"version": "0.0.1",
 	"packageManager": "pnpm@8.6.12",
-	"license": "UNLICENSED",
+	"license": "MIT",
 	"private": true,
 	"scripts": {
 		"lint": "eslint . --fix",
 		"format": "npx prettier --write .",
 		"test-install": "playwright install chromium",
 		"test-report": "playwright show-report",
-		"test": "playwright test"
+		"test": "playwright test",
+		"test:docker": "task test:docker"
 	},
 	"devDependencies": {
 		"@go-task/cli": "^3.28.0",
