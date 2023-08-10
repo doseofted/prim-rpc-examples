@@ -3,9 +3,18 @@ import { test, expect } from "@playwright/test"
 import { $ } from "zx"
 import { setupServer } from "./utils/setup-server.mjs"
 
+let matches = 0
 const { beforeAll, afterAll } = setupServer(
 	() => $`pnpm start`,
-	(data) => !!data.match(/ready in .+ ms/m),
+	(data) => {
+		if (data.match(/Local.+3000/m)) {
+			matches++
+		}
+		if (data.match(/Serving.+3001/m)) {
+			matches++
+		}
+		return matches === 2
+	},
 	"./monorepo-setup"
 )
 test.beforeAll(beforeAll)
