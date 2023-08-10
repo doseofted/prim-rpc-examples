@@ -25,10 +25,9 @@ jobs:
         run: pnpm test-install
       - name: Test Examples
         run: pnpm test
-      # NOTE: playwright-report is not needed in CI, I could just run this locally for now
-      # - uses: actions/upload-artifact@v3
-      #   if: always()
-      #   with:
-      #     name: playwright-report
-      #     path: playwright-report/
-      #     retention-days: 30
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
