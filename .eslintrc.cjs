@@ -14,6 +14,6 @@ module.exports = {
 		node: true,
 		es2023: true,
 	},
-	ignorePatterns: [".eslintrc.*", "dist/"],
+	ignorePatterns: [".eslintrc.*", "dist/", "tests/**"],
 	globals: {},
 }

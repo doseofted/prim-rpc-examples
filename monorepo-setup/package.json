@@ -4,7 +4,7 @@
 	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {
-		"start": "turbo run start --filter=./packages/*"
+		"start": "turbo run start --filter=\"./packages/*\""
 	},
 	"devDependencies": {
 		"turbo": "^1.10.12"

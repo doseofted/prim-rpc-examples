@@ -7,15 +7,19 @@
 		"url": "https://doseofted.me/"
 	},
 	"version": "0.0.1",
-	"packageManager": "pnpm@8.6.3",
+	"packageManager": "pnpm@8.6.12",
 	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {
 		"lint": "eslint . --fix",
-		"format": "npx prettier --write ."
+		"format": "npx prettier --write .",
+		"test-install": "playwright install chromium",
+		"test-report": "playwright show-report",
+		"test": "playwright test"
 	},
 	"devDependencies": {
 		"@go-task/cli": "^3.28.0",
+		"@playwright/test": "^1.36.2",
 		"@typescript-eslint/eslint-plugin": "^6.3.0",
 		"@typescript-eslint/parser": "^6.3.0",
 		"eslint": "^8.46.0",
