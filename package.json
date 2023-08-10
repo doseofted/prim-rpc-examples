@@ -15,8 +15,7 @@
 		"format": "npx prettier --write .",
 		"test-install": "playwright install chromium",
 		"test-report": "playwright show-report",
-		"test": "playwright test",
-		"test:docker": "task test:docker"
+		"test": "playwright test"
 	},
 	"devDependencies": {
 		"@go-task/cli": "^3.28.0",
