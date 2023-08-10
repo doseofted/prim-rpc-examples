@@ -21,6 +21,7 @@ export function setupServer(cmd, isReady, directory) {
 				// NOTE: Vite errors on SIGINT signal (expects "q" on stdin instead), just catch error here
 				server = cmd().nothrow()
 				await checkServerRunning(server, isReady)
+				await new Promise((resolve) => setTimeout(resolve, 1000))
 				console.debug("Server is running")
 			} catch (error) {
 				console.log("Server failed")
