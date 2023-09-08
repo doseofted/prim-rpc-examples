@@ -11,17 +11,17 @@
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.17",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.15",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.16",
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.7",
-		"hono": "^3.4.1"
+		"hono": "^3.5.8"
 	},
 	"devDependencies": {
 		"@hono/node-server": "^1.1.1",
 		"@types/ws": "^8.5.5",
-		"concurrently": "^8.2.0",
-		"solid-js": "^1.7.10",
-		"tsx": "^3.12.7",
-		"typescript": "^5.1.6",
+		"concurrently": "^8.2.1",
+		"solid-js": "^1.7.11",
+		"tsx": "^3.12.8",
+		"typescript": "^5.2.2",
 		"vite": "^4.4.9",
 		"vite-plugin-solid": "^2.7.0"
 	},
