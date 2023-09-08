@@ -42,14 +42,14 @@ importers:
   client-server:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(fastify@4.21.0)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(fastify@4.21.0)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
-        specifier: 0.1.0-alpha.6
-        version: 0.1.0-alpha.6
+        specifier: 0.1.0-alpha.7
+        version: 0.1.0-alpha.7
       '@fastify/cors':
         specifier: ^8.3.0
         version: 8.3.0
@@ -85,14 +85,14 @@ importers:
   custom-handler:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(express@4.18.2)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
-        specifier: 0.1.0-alpha.6
-        version: 0.1.0-alpha.6
+        specifier: 0.1.0-alpha.7
+        version: 0.1.0-alpha.7
       cors:
         specifier: ^2.8.5
         version: 2.8.5
@@ -137,20 +137,20 @@ importers:
   fullstack-framework:
     devDependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(express@4.18.2)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
-        specifier: 0.1.0-alpha.6
-        version: 0.1.0-alpha.6
+        specifier: 0.1.0-alpha.7
+        version: 0.1.0-alpha.7
       '@types/node':
         specifier: ^18.17.4
         version: 18.17.4
       nuxt:
         specifier: ^3.6.5
-        version: 3.6.5(@types/node@18.17.4)(eslint@8.46.0)(typescript@5.1.6)
+        version: 3.6.5(@types/node@18.17.4)
 
   monorepo-setup:
     devDependencies:
@@ -161,14 +161,14 @@ importers:
   monorepo-setup/packages/client:
     devDependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(express@4.18.2)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
-        specifier: 0.1.0-alpha.6
-        version: 0.1.0-alpha.6
+        specifier: 0.1.0-alpha.7
+        version: 0.1.0-alpha.7
       monorepo-module:
         specifier: workspace:*
         version: link:../module
@@ -197,11 +197,11 @@ importers:
   monorepo-setup/packages/server:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(fastify@4.21.0)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(fastify@4.21.0)(ws@8.13.0)
       '@fastify/cors':
         specifier: ^8.3.0
         version: 8.3.0
@@ -228,14 +228,14 @@ importers:
   server-context:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(fastify@4.21.0)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(fastify@4.21.0)(ws@8.13.0)
       '@doseofted/prim-rpc-tooling':
-        specifier: 0.1.0-alpha.6
-        version: 0.1.0-alpha.6
+        specifier: 0.1.0-alpha.7
+        version: 0.1.0-alpha.7
       '@fastify/cookie':
         specifier: ^9.0.4
         version: 9.0.4
@@ -274,14 +274,14 @@ importers:
   serverless:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(hono@3.4.1)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(hono@3.4.1)
       '@doseofted/prim-rpc-tooling':
-        specifier: 0.1.0-alpha.6
-        version: 0.1.0-alpha.6
+        specifier: 0.1.0-alpha.7
+        version: 0.1.0-alpha.7
       hono:
         specifier: ^3.4.1
         version: 3.4.1
@@ -314,11 +314,11 @@ importers:
   simple-test:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(express@4.18.2)(ws@8.13.0)
 
   starter:
     dependencies:
@@ -351,11 +351,11 @@ importers:
   web-worker:
     dependencies:
       '@doseofted/prim-rpc':
-        specifier: 0.1.0-alpha.15
-        version: 0.1.0-alpha.15
+        specifier: 0.1.0-alpha.17
+        version: 0.1.0-alpha.17
       '@doseofted/prim-rpc-plugins':
-        specifier: 0.1.0-alpha.13
-        version: 0.1.0-alpha.13(express@4.18.2)(ws@8.13.0)
+        specifier: 0.1.0-alpha.15
+        version: 0.1.0-alpha.15(express@4.18.2)(ws@8.13.0)
     devDependencies:
       solid-js:
         specifier: ^1.7.10
@@ -910,9 +910,10 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@doseofted/prim-rpc-plugins@0.1.0-alpha.13(express@4.18.2)(ws@8.13.0):
-    resolution: {integrity: sha512-TmGdqtuswU1oadnoolnANR72Jj4ECvRBjLUNrliLH/PL5VrzdsGtKHV0rPajVOzcvOJvZHEJ0MGiOopRc2lmzA==}
+  /@doseofted/prim-rpc-plugins@0.1.0-alpha.15(express@4.18.2)(ws@8.13.0):
+    resolution: {integrity: sha512-R0aVR7h0OoUBzJNPBN+M0h+MDS6A28ol+shZm8svsmFPrCiqnIFMyLClWySQXdrAG0mzyO4qf/1iVksiAgn3iQ==}
     peerDependencies:
+      astro: 3.x
       axios: 1.x
       express: 4.x
       fastify: 4.x
@@ -921,6 +922,8 @@ packages:
       next: 13.x
       ws: 8.x
     peerDependenciesMeta:
+      astro:
+        optional: true
       axios:
         optional: true
       express:
@@ -941,9 +944,10 @@ packages:
       nanoid: 4.0.2
       ws: 8.13.0
 
-  /@doseofted/prim-rpc-plugins@0.1.0-alpha.13(fastify@4.21.0)(ws@8.13.0):
-    resolution: {integrity: sha512-TmGdqtuswU1oadnoolnANR72Jj4ECvRBjLUNrliLH/PL5VrzdsGtKHV0rPajVOzcvOJvZHEJ0MGiOopRc2lmzA==}
+  /@doseofted/prim-rpc-plugins@0.1.0-alpha.15(fastify@4.21.0)(ws@8.13.0):
+    resolution: {integrity: sha512-R0aVR7h0OoUBzJNPBN+M0h+MDS6A28ol+shZm8svsmFPrCiqnIFMyLClWySQXdrAG0mzyO4qf/1iVksiAgn3iQ==}
     peerDependencies:
+      astro: 3.x
       axios: 1.x
       express: 4.x
       fastify: 4.x
@@ -952,6 +956,8 @@ packages:
       next: 13.x
       ws: 8.x
     peerDependenciesMeta:
+      astro:
+        optional: true
       axios:
         optional: true
       express:
@@ -973,9 +979,10 @@ packages:
       ws: 8.13.0
     dev: false
 
-  /@doseofted/prim-rpc-plugins@0.1.0-alpha.13(hono@3.4.1):
-    resolution: {integrity: sha512-TmGdqtuswU1oadnoolnANR72Jj4ECvRBjLUNrliLH/PL5VrzdsGtKHV0rPajVOzcvOJvZHEJ0MGiOopRc2lmzA==}
+  /@doseofted/prim-rpc-plugins@0.1.0-alpha.15(hono@3.4.1):
+    resolution: {integrity: sha512-R0aVR7h0OoUBzJNPBN+M0h+MDS6A28ol+shZm8svsmFPrCiqnIFMyLClWySQXdrAG0mzyO4qf/1iVksiAgn3iQ==}
     peerDependencies:
+      astro: 3.x
       axios: 1.x
       express: 4.x
       fastify: 4.x
@@ -984,6 +991,8 @@ packages:
       next: 13.x
       ws: 8.x
     peerDependenciesMeta:
+      astro:
+        optional: true
       axios:
         optional: true
       express:
@@ -1004,16 +1013,16 @@ packages:
       nanoid: 4.0.2
     dev: false
 
-  /@doseofted/prim-rpc-tooling@0.1.0-alpha.6:
-    resolution: {integrity: sha512-fgJ7u+Nfch8q1T6i3AUHPXGZ4I++tj5+xsxszFCXBBML6Oj6nMv0Dn3UUVlyLETcFUoa98ZruwTca59YenV38Q==}
+  /@doseofted/prim-rpc-tooling@0.1.0-alpha.7:
+    resolution: {integrity: sha512-YUFMiZw8zptQsm72xLy9X/3kSyxLGiSe0Co0JpNgCy67+DgIZWBc9xrgwdq9iYeUbGQJOFt0AQVOFjqh0JhmtA==}
     dependencies:
       just-safe-get: 4.2.0
       just-safe-set: 4.2.1
       unplugin: 1.4.0
       zx: 7.2.3
 
-  /@doseofted/prim-rpc@0.1.0-alpha.15:
-    resolution: {integrity: sha512-E1+pp18GxNtUHJwlOWVPvfdHuuD9anQ/B1KWOMqQmzXDRrzxrHoO1bCzAC8/FNfAsSPRzVjjKYVNU/qvMffvlQ==}
+  /@doseofted/prim-rpc@0.1.0-alpha.17:
+    resolution: {integrity: sha512-m7KGjNRI39o9jUoIrwWbk4I8NYsvevrhR8w0R/L2aws84T8hxiSv1ujNzSefwwvk1wiqpPU0a+uLOj8bKmh0tQ==}
     dependencies:
       defu: 6.1.2
       destr: 2.0.1
@@ -1023,8 +1032,8 @@ packages:
       nanoid: 4.0.2
       proxy-deep: 3.1.1
       query-string: 8.1.0
-      serialize-error: 11.0.1
-      type-fest: 4.2.0
+      serialize-error: 11.0.2
+      type-fest: 4.3.1
 
   /@esbuild-kit/cjs-loader@2.4.2:
     resolution: {integrity: sha512-BDXFbYOJzT/NBEtp71cvsrGPwGAMGRB/349rwKuoxNSiKjPraNNnlK6MIIabViCjqZugu6j+xeMDlEkWdHHJSg==}
@@ -1926,7 +1935,7 @@ packages:
     resolution: {integrity: sha512-5gc02Pu1HycOVUWJ8aYsWeeXcSTPe8iX8+KIrhyEtEoOSkY0eMBuo0ssljB8wALuEmepv31DlYe5gpiRwkjESA==}
     dev: true
 
-  /@nuxt/vite-builder@3.6.5(@types/node@18.17.4)(eslint@8.46.0)(typescript@5.1.6)(vue@3.3.4):
+  /@nuxt/vite-builder@3.6.5(@types/node@18.17.4)(vue@3.3.4):
     resolution: {integrity: sha512-pwSpt257ApCp3XWUs8vrC7X9QHeHUv5PbbIR3+5w0n5f95XPNOQWDJa2fTPX/H6oaRJCPYAsBPqiQhQ7qW/NZQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
@@ -1965,7 +1974,7 @@ packages:
       unplugin: 1.4.0
       vite: 4.3.9(@types/node@18.17.4)
       vite-node: 0.33.0(@types/node@18.17.4)
-      vite-plugin-checker: 0.6.1(eslint@8.46.0)(typescript@5.1.6)(vite@4.3.9)
+      vite-plugin-checker: 0.6.1(vite@4.3.9)
       vue: 3.3.4
       vue-bundle-renderer: 1.0.3
     transitivePeerDependencies:
@@ -2227,7 +2236,7 @@ packages:
     resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
     dependencies:
       '@types/jsonfile': 6.1.1
-      '@types/node': 18.17.4
+      '@types/node': 18.17.14
 
   /@types/http-proxy@1.17.11:
     resolution: {integrity: sha512-HC8G7c1WmaF2ekqpnFq626xd3Zz0uvaqFmBJNRZCGEZCXkvSdJoNFn/8Ygbd9fKNQj8UzLdCETaI0UWPAjK7IA==}
@@ -2242,7 +2251,7 @@ packages:
   /@types/jsonfile@6.1.1:
     resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==}
     dependencies:
-      '@types/node': 18.17.4
+      '@types/node': 18.17.14
 
   /@types/mime@1.3.2:
     resolution: {integrity: sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==}
@@ -2255,8 +2264,12 @@ packages:
   /@types/minimist@1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
 
+  /@types/node@18.17.14:
+    resolution: {integrity: sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw==}
+
   /@types/node@18.17.4:
     resolution: {integrity: sha512-ATL4WLgr7/W40+Sp1WnNTSKbgVn6Pvhc/2RHAdt8fl6NsQyp4oPCi2eKcGOvA494bwf1K/W6nGgZ9TwDqvpjdw==}
+    dev: true
 
   /@types/node@20.3.1:
     resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
@@ -3132,7 +3145,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -4201,13 +4214,21 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
+    dev: true
+    optional: true
+
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
     optional: true
 
   /function-bind@1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
 
-  /fx@28.0.0:
-    resolution: {integrity: sha512-vKQDA9g868cZiW8ulgs2uN1yx1i7/nsS33jTMOxekk0Z03BJLffVcdW6AVD32fWb3E6RtmWWuBXBZOk8cLXFNQ==}
+  /fx@28.0.1:
+    resolution: {integrity: sha512-U/ELI6liBxdquKMe7oA6sOYgutVjSmaQTpZ3MDhJs/9l4lK6ewATv1SQCR8LRDz+n2sKTjcNEnj1djtuZ9OgoA==}
     hasBin: true
 
   /gauge@3.0.2:
@@ -5321,10 +5342,10 @@ packages:
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
-  /nuxt@3.6.5(@types/node@18.17.4)(eslint@8.46.0)(typescript@5.1.6):
+  /nuxt@3.6.5(@types/node@18.17.4):
     resolution: {integrity: sha512-0A7V8B1HrIXX9IlqPc2w+5ZPXi+7MYa9QVhtuGYuLvjRKoSFANhCoMPRP6pKdoxigM1MBxhLue2VmHA/VbtJCw==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
@@ -5340,7 +5361,7 @@ packages:
       '@nuxt/schema': 3.6.5
       '@nuxt/telemetry': 2.3.2
       '@nuxt/ui-templates': 1.3.1
-      '@nuxt/vite-builder': 3.6.5(@types/node@18.17.4)(eslint@8.46.0)(typescript@5.1.6)(vue@3.3.4)
+      '@nuxt/vite-builder': 3.6.5(@types/node@18.17.4)(vue@3.3.4)
       '@types/node': 18.17.4
       '@unhead/ssr': 1.2.2
       '@unhead/vue': 1.2.2(vue@3.3.4)
@@ -6284,7 +6305,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /rollup@3.28.0:
@@ -6292,7 +6313,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /run-parallel@1.2.0:
@@ -6372,8 +6393,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /serialize-error@11.0.1:
-    resolution: {integrity: sha512-B5yw3/Lg+Daspbs0f+iO3Qim0+lALnaLS8aZUAy8Y0tO92tkOoMEuwtKo4jpZ5XO16CTwMi4tYN8cZQI3QF2Qw==}
+  /serialize-error@11.0.2:
+    resolution: {integrity: sha512-o43i0jLcA0LXA5Uu+gI1Vj+lF66KR9IAcy0ThbGq1bAMPN+k5IgSHsulfnqf/ddKAz6dWf+k8PD5hAr9oCSHEQ==}
     engines: {node: '>=14.16'}
     dependencies:
       type-fest: 2.19.0
@@ -6843,7 +6864,7 @@ packages:
       '@esbuild-kit/core-utils': 3.1.0
       '@esbuild-kit/esm-loader': 2.5.5
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /turbo-darwin-64@1.10.12:
     resolution: {integrity: sha512-vmDfGVPl5/aFenAbOj3eOx3ePNcWVUyZwYr7taRl0ZBbmv2TzjRiFotO4vrKCiTVnbqjQqAFQWY2ugbqCI1kOQ==}
@@ -6927,8 +6948,8 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  /type-fest@4.2.0:
-    resolution: {integrity: sha512-5zknd7Dss75pMSED270A1RQS3KloqRJA9XbXLe0eCxyw7xXFb3rd+9B0UQ/0E+LQT6lnrLviEolYORlRWamn4w==}
+  /type-fest@4.3.1:
+    resolution: {integrity: sha512-pphNW/msgOUSkJbH58x8sqpq8uQj6b0ZKGxEsLKMUnGorRcDjrUaLS+39+/ub41JNTwrrMyJcUB8+YZs3mbwqw==}
     engines: {node: '>=16'}
 
   /type-is@1.6.18:
@@ -7178,7 +7199,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-checker@0.6.1(eslint@8.46.0)(typescript@5.1.6)(vite@4.3.9):
+  /vite-plugin-checker@0.6.1(vite@4.3.9):
     resolution: {integrity: sha512-4fAiu3W/IwRJuJkkUZlWbLunSzsvijDf0eDN6g/MGh6BUK4SMclOTGbLJCPvdAcMOQvVmm8JyJeYLYd4//8CkA==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -7214,7 +7235,6 @@ packages:
       chalk: 4.1.2
       chokidar: 3.5.3
       commander: 8.3.0
-      eslint: 8.46.0
       fast-glob: 3.3.1
       fs-extra: 11.1.1
       lodash.debounce: 4.0.8
@@ -7223,7 +7243,6 @@ packages:
       semver: 7.5.4
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
-      typescript: 5.1.6
       vite: 4.3.9(@types/node@18.17.4)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
@@ -7280,7 +7299,7 @@ packages:
       postcss: 8.4.27
       rollup: 3.27.2
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vite@4.4.9:
@@ -7315,7 +7334,7 @@ packages:
       postcss: 8.4.27
       rollup: 3.28.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vitefu@0.2.4(vite@4.4.9):
@@ -7503,6 +7522,10 @@ packages:
     resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}
     engines: {node: '>= 14'}
 
+  /yaml@2.3.2:
+    resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
+    engines: {node: '>= 14'}
+
   /yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -7545,16 +7568,16 @@ packages:
     dependencies:
       '@types/fs-extra': 11.0.1
       '@types/minimist': 1.2.2
-      '@types/node': 18.17.4
+      '@types/node': 18.17.14
       '@types/ps-tree': 1.1.2
       '@types/which': 3.0.0
       chalk: 5.3.0
       fs-extra: 11.1.1
-      fx: 28.0.0
+      fx: 28.0.1
       globby: 13.2.2
       minimist: 1.2.8
       node-fetch: 3.3.1
       ps-tree: 1.2.0
       webpod: 0.0.2
       which: 3.0.1
-      yaml: 2.3.1
+      yaml: 2.3.2

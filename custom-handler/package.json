@@ -10,9 +10,9 @@
 		"start": "concurrently \"npm:serve\" \"npm:client\""
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.15",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.13",
-		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.6",
+		"@doseofted/prim-rpc": "0.1.0-alpha.17",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.15",
+		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.7",
 		"cors": "^2.8.5",
 		"express": "^4.18.2",
 		"ws": "^8.13.0",

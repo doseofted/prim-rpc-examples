@@ -8,8 +8,8 @@
 		"start": "tsx watch --clear-screen=false index.ts"
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.15",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.13",
+		"@doseofted/prim-rpc": "0.1.0-alpha.17",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.15",
 		"@fastify/cors": "^8.3.0",
 		"fastify": "^4.21.0",
 		"monorepo-module": "workspace:*",
