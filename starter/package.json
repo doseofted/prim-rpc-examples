@@ -1,32 +1,10 @@
 {
-	"name": "prim-rpc-starter",
-	"version": "0.0.1",
-	"packageManager": "pnpm@7.14.2",
-	"description": "An example project to get started with Prim+RPC",
+	"name": "@example/starter",
 	"private": true,
-	"license": "UNLICENSED",
-	"type": "module",
-	"scripts": {
-		"dev:server": "tsx watch --clear-screen=false server.ts",
-		"dev:client": "vite --port 3000",
-		"dev": "concurrently \"npm:dev:*\"",
-		"build": "vite build --target=esnext",
-		"start": "vite build && tsx server.ts"
-	},
 	"devDependencies": {
-		"concurrently": "^8.2.1",
-		"solid-js": "^1.7.11",
-		"typescript": "^5.2.2",
-		"vite": "^4.4.9"
+		"turbo": "^1.10.14"
 	},
-	"dependencies": {
-		"@fastify/cors": "^8.3.0",
-		"@fastify/static": "^6.11.0",
-		"fastify": "^4.22.2",
-		"tsx": "^3.12.8"
-	},
-	"stackblitz": {
-		"installDependencies": false,
-		"startCommand": "pnpm install && pnpm dev"
+	"scripts": {
+		"dev": "turbo dev"
 	}
 }
