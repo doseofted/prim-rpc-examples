@@ -9,6 +9,7 @@ function postprocess(res: Response) {
 	res.headers.set("access-control-allow-origin", "http://localhost:5173")
 	res.headers.set("access-control-allow-headers", "content-type")
 }
+// Server routes are automatically created for your functions
 const fetch = primFetch({ prim, postprocess })
 
 const fetchAdapter = createServerAdapter(fetch)
