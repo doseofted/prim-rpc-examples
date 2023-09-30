@@ -4,7 +4,8 @@
 	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {
-		"dev": "vite",
+		"dev": "vite --open",
+		"build": "vite build",
 		"start": "vite preview"
 	},
 	"devDependencies": {
