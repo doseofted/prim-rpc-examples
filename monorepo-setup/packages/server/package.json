@@ -8,16 +8,16 @@
 		"start": "tsx watch --clear-screen=false index.ts"
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.17",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.16",
-		"@fastify/cors": "^8.3.0",
-		"fastify": "^4.22.2",
+		"@doseofted/prim-rpc": "0.1.0-alpha.18",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.19",
+		"@fastify/cors": "^8.4.0",
+		"fastify": "^4.23.2",
 		"monorepo-module": "workspace:*",
-		"ws": "^8.14.0"
+		"ws": "^8.14.2"
 	},
 	"devDependencies": {
-		"@types/ws": "^8.5.5",
-		"tsx": "^3.12.8",
+		"@types/ws": "^8.5.6",
+		"tsx": "^3.13.0",
 		"typescript": "^5.2.2"
 	}
 }

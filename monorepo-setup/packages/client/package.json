@@ -8,11 +8,11 @@
 		"start": "vite dev"
 	},
 	"devDependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.17",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.16",
+		"@doseofted/prim-rpc": "0.1.0-alpha.18",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.19",
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.7",
 		"monorepo-module": "workspace:*",
-		"solid-js": "^1.7.11",
+		"solid-js": "^1.7.12",
 		"typescript": "^5.2.2",
 		"vite": "^4.4.9",
 		"vite-plugin-solid": "^2.7.0"
