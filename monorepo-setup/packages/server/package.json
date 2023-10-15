@@ -11,12 +11,12 @@
 		"@doseofted/prim-rpc": "0.1.0-alpha.18",
 		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.19",
 		"@fastify/cors": "^8.4.0",
-		"fastify": "^4.23.2",
+		"fastify": "^4.24.1",
 		"monorepo-module": "workspace:*",
 		"ws": "^8.14.2"
 	},
 	"devDependencies": {
-		"@types/ws": "^8.5.6",
+		"@types/ws": "^8.5.7",
 		"tsx": "^3.13.0",
 		"typescript": "^5.2.2"
 	}

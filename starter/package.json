@@ -2,9 +2,13 @@
 	"name": "@example/starter",
 	"private": true,
 	"devDependencies": {
-		"turbo": "^1.10.14"
+		"turbo": "^1.10.15"
 	},
 	"scripts": {
 		"dev": "turbo dev"
+	},
+	"stackblitz": {
+		"installDependencies": false,
+		"startCommand": "pnpm install && pnpm dev"
 	}
 }

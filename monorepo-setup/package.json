@@ -7,7 +7,7 @@
 		"start": "turbo run start --filter=\"./packages/*\""
 	},
 	"devDependencies": {
-		"turbo": "^1.10.14"
+		"turbo": "^1.10.15"
 	},
 	"stackblitz": {
 		"installDependencies": false,
