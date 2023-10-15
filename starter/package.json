@@ -9,6 +9,6 @@
 	},
 	"stackblitz": {
 		"installDependencies": false,
-		"startCommand": "pnpm install && pnpm dev"
+		"startCommand": "rm -f package-lock.json && pnpm install && pnpm dev"
 	}
 }
