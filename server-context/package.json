@@ -11,11 +11,11 @@
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.18",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.19",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.20",
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.7",
 		"@fastify/cookie": "^9.1.0",
 		"@fastify/cors": "^8.4.0",
-		"fastify": "^4.24.1",
+		"fastify": "^4.24.2",
 		"ws": "^8.14.2"
 	},
 	"devDependencies": {

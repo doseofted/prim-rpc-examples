@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@doseofted/prim-rpc": "0.1.0-alpha.18",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.19",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.20",
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.7",
 		"hono": "^3.7.6"
 	},
