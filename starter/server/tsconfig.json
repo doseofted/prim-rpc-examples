@@ -1,11 +1,3 @@
 {
-	"compilerOptions": {
-		"strict": true,
-		"target": "ES2022",
-		"moduleResolution": "Bundler",
-		"module": "ESNext",
-		"noEmit": true,
-		"isolatedModules": true,
-		"skipLibCheck": true
-	}
+	"extends": "../tsconfig.json"
 }

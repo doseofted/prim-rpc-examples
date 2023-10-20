@@ -1,6 +1,8 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
-    "dev": {}
-  }
+	"$schema": "https://turbo.build/schema.json",
+	"pipeline": {
+		"dev": { "outputs": [] },
+		"build": { "outputs": [] },
+		"start": { "dependsOn": ["build"] }
+	}
 }
