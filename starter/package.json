@@ -2,7 +2,9 @@
 	"name": "@example/starter",
 	"private": true,
 	"devDependencies": {
-		"turbo": "^1.10.15"
+		"turbo": "^1.10.15",
+		"@types/node": "^18.17.4",
+		"vite": "^4.4.11"
 	},
 	"scripts": {
 		"dev": "turbo dev"
