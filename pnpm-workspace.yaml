@@ -9,3 +9,6 @@ packages:
   - "custom-handler"
   - "server-context"
   - "fullstack-framework"
+  - "authentication"
+  - "authentication/client"
+  - "authentication/server"
