@@ -8,8 +8,8 @@
 		"start": "node index.js"
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.18",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.20"
+		"@doseofted/prim-rpc": "0.1.0-alpha.21",
+		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.21"
 	},
 	"stackblitz": {
 		"installDependencies": false,

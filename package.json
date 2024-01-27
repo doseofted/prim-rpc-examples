@@ -18,15 +18,15 @@
 		"test": "playwright test"
 	},
 	"devDependencies": {
-		"@go-task/cli": "^3.31.0",
-		"@playwright/test": "^1.39.0",
-		"@typescript-eslint/eslint-plugin": "^6.8.0",
-		"@typescript-eslint/parser": "^6.8.0",
-		"eslint": "^8.51.0",
-		"eslint-config-prettier": "^9.0.0",
-		"prettier": "^3.0.3",
-		"turbo": "^1.10.15",
-		"typescript": "^5.2.2",
+		"@go-task/cli": "^3.34.0",
+		"@playwright/test": "^1.41.1",
+		"@typescript-eslint/eslint-plugin": "^6.19.1",
+		"@typescript-eslint/parser": "^6.19.1",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"prettier": "^3.2.4",
+		"turbo": "^1.11.3",
+		"typescript": "^5.3.3",
 		"zx": "^7.2.3"
 	}
 }
