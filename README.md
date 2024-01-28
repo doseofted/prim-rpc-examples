@@ -20,12 +20,7 @@ from the documentation website or you may
 [download the repository](https://github.com/doseofted/prim-rpc-examples) for
 all examples.
 
-You can install dependencies in all examples by running the following commands:
-
-```zsh
-corepack enable
-npm install
-```
+You can install dependencies in all examples with `npm install`
 
 ## Other Examples
 
@@ -33,6 +28,12 @@ The examples in this repository are kept short and simple. You may find more
 complete examples that use Prim+RPC below:
 
 - [Todo App in Nuxt](https://github.com/doseofted/todo-nuxt-prim-rpc-demo)
+
+You may also reference some experiments that I've created for fun:
+
+- [Form Submission Using Only Prim+RPC](https://stackblitz.com/edit/prim-rpc-form-submit?file=README.md)
+- [Synced Tab Drawings with Prim+RPC](https://stackblitz.com/edit/prim-rpc-connected-tabs?file=README.md)
+- [Simple Authentication using Prim+RPC](https://stackblitz.com/edit/auth-with-prim-rpc?file=README.md)
 
 ## License
 
