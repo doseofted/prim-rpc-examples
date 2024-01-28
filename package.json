@@ -27,9 +27,11 @@
 	"scripts": {
 		"lint": "eslint . --fix",
 		"format": "npx prettier --write .",
-		"test-install": "playwright install chromium",
-		"test-report": "playwright show-report",
-		"test": "playwright test"
+		"test:install": "playwright install chromium",
+		"test:report": "playwright show-report",
+		"test": "playwright test",
+		"upgrades:check": "taze -- major -r",
+		"upgrades:apply": "taze -- major -r"
 	},
 	"devDependencies": {
 		"@go-task/cli": "^3.34.0",
