@@ -12,7 +12,6 @@
 		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.21",
 		"@fastify/cors": "^9.0.0",
 		"fastify": "^4.25.2",
-		"monorepo-module": "workspace:*",
 		"ws": "^8.16.0"
 	},
 	"devDependencies": {

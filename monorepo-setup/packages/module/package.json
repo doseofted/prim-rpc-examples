@@ -7,7 +7,7 @@
 	"scripts": {
 		"build": "tsup --config build.config.js",
 		"dev": "tsup --watch --config build.config.js",
-		"start": "pnpm dev",
+		"start": "npm run dev",
 		"check": "tsc --noEmit"
 	},
 	"devDependencies": {

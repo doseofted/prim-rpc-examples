@@ -21,6 +21,6 @@ In this project, we have a web server in Node and a website built with Vite:
 You can start this project in development mode by running:
 
 ```zsh
-pnpm install
-pnpm dev
+npm install
+npm dev
 ```

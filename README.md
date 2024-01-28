@@ -24,7 +24,7 @@ You can install dependencies in all examples by running the following commands:
 
 ```zsh
 corepack enable
-pnpm install
+npm install
 ```
 
 ## Other Examples

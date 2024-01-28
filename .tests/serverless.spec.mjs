@@ -5,7 +5,7 @@ import { setupServer } from "./utils/setup-server.mjs"
 
 let matches = 0
 const { beforeAll, afterAll } = setupServer(
-	() => $`pnpm start`,
+	() => $`npm start`,
 	(data) => {
 		if (data.match(/Local.+3000/m)) {
 			matches++
