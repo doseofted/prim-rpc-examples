@@ -4,13 +4,17 @@
 	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {
+		"turbo": "turbo",
 		"start": "turbo run start --filter=\"./packages/*\""
 	},
 	"devDependencies": {
 		"turbo": "^1.11.3"
 	},
 	"stackblitz": {
-		"installDependencies": false,
-		"startCommand": "rm -f package-lock.json && pnpm install && pnpm start"
-	}
+		"installDependencies": true,
+		"startCommand": "npm start"
+	},
+	"workspaces": [
+		"packages/*"
+	]
 }

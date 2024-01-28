@@ -10,7 +10,11 @@
 		"dev": "turbo dev"
 	},
 	"stackblitz": {
-		"installDependencies": false,
-		"startCommand": "rm -f package-lock.json && pnpm install && pnpm dev"
-	}
+		"installDependencies": true,
+		"startCommand": "npm run dev"
+	},
+	"workspaces": [
+		"server",
+		"client"
+	]
 }

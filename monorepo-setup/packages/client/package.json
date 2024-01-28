@@ -11,7 +11,6 @@
 		"@doseofted/prim-rpc": "0.1.0-alpha.21",
 		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.21",
 		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.8",
-		"monorepo-module": "workspace:*",
 		"solid-js": "^1.8.12",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.12",

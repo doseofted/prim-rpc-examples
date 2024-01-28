@@ -16,6 +16,6 @@ You can start this example by running the helper script (configured with
 [Turbo](https://github.com/vercel/turbo)):
 
 ```zsh
-pnpm install
-pnpm start
+npm install
+npm start
 ```

@@ -12,7 +12,7 @@
 		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.21"
 	},
 	"stackblitz": {
-		"installDependencies": false,
-		"startCommand": "pnpm install && pnpm start"
+		"installDependencies": true,
+		"startCommand": "npm start"
 	}
 }

@@ -4,7 +4,7 @@ import { $ } from "zx"
 import { setupServer } from "./utils/setup-server.mjs"
 
 const { beforeAll, afterAll } = setupServer(
-	() => $`pnpm start`,
+	() => $`npm start`,
 	(data) => !!data.match(/Nitro built in .+ ms/m),
 	"./fullstack-framework"
 )

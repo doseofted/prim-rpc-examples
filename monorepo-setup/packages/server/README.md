@@ -22,5 +22,5 @@ You can start both the server and client, at the same time, by running the
 "start" helper script:
 
 ```zsh
-pnpm start
+npm start
 ```

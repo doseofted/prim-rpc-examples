@@ -19,7 +19,7 @@
 		"nuxt": "^3.9.3"
 	},
 	"stackblitz": {
-		"installDependencies": false,
-		"startCommand": "pnpm install && pnpm start"
+		"installDependencies": true,
+		"startCommand": "npm start"
 	}
 }

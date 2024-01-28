@@ -27,6 +27,6 @@ promise (and refetch if given references change).
 You can start this example using the following commands:
 
 ```zsh
-pnpm install
-pnpm start
+npm install
+npm start
 ```
