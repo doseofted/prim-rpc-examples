@@ -11,7 +11,10 @@
 	},
 	"stackblitz": {
 		"installDependencies": true,
-		"startCommand": "npm install && npm run dev"
+		"startCommand": "npm run dev"
 	},
-	"workspaces": ["server", "client"]
+	"workspaces": [
+		"server",
+		"client"
+	]
 }

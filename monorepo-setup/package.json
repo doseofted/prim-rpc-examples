@@ -12,7 +12,7 @@
 	},
 	"stackblitz": {
 		"installDependencies": true,
-		"startCommand": "npm install && npm start"
+		"startCommand": "npm start"
 	},
 	"workspaces": [
 		"packages/*"
