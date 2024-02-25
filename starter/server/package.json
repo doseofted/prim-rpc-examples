@@ -8,11 +8,11 @@
 		"start": "tsx index.ts"
 	},
 	"dependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.18",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.20",
-		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.7",
-		"@whatwg-node/server": "^0.9.14",
-		"tsx": "^3.13.0",
-		"typescript": "^5.0.2"
+		"@doseofted/prim-rpc": "^0.1.0-alpha.24",
+		"@doseofted/prim-rpc-plugins": "^0.1.0-alpha.22",
+		"@doseofted/prim-rpc-tooling": "^0.1.0-alpha.8",
+		"@whatwg-node/server": "^0.9.25",
+		"tsx": "^4.7.1",
+		"typescript": "^5.3.3"
 	}
 }

@@ -12,11 +12,11 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
-		"@doseofted/prim-rpc": "0.1.0-alpha.21",
-		"@doseofted/prim-rpc-plugins": "0.1.0-alpha.21",
-		"@doseofted/prim-rpc-tooling": "0.1.0-alpha.8",
-		"@types/node": "^20.11.8",
-		"nuxt": "^3.9.3"
+		"@doseofted/prim-rpc": "^0.1.0-alpha.24",
+		"@doseofted/prim-rpc-plugins": "^0.1.0-alpha.22",
+		"@doseofted/prim-rpc-tooling": "^0.1.0-alpha.8",
+		"@types/node": "^20.11.20",
+		"nuxt": "^3.10.3"
 	},
 	"stackblitz": {
 		"installDependencies": true,
