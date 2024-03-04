@@ -9,7 +9,7 @@
 		"start": "vite preview --port 3000"
 	},
 	"devDependencies": {
-		"@doseofted/prim-rpc": "^0.1.0-alpha.24",
+		"@doseofted/prim-rpc": "^0.1.0-alpha.25",
 		"@doseofted/prim-rpc-plugins": "^0.1.0-alpha.22",
 		"@doseofted/prim-rpc-tooling": "^0.1.0-alpha.8",
 		"typescript": "^5.3.3",

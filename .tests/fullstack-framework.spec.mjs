@@ -5,7 +5,7 @@ import { setupServer } from "./utils/setup-server.mjs"
 
 const { beforeAll, afterAll } = setupServer(
 	() => $`npm start`,
-	(data) => !!data.match(/Nitro built in .+ ms/m),
+	(data) => !!data.match(/Nitro server built in .+ ms/m),
 	"./fullstack-framework"
 )
 test.beforeAll(beforeAll)

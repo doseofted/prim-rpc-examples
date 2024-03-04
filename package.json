@@ -7,7 +7,7 @@
 		"url": "https://doseofted.me/"
 	},
 	"version": "0.0.1",
-	"packageManager": "npm@10.4.0",
+	"packageManager": "npm@10.5.0",
 	"license": "MIT",
 	"private": true,
 	"workspaces": [
@@ -34,10 +34,10 @@
 		"upgrades:apply": "taze major -r -w"
 	},
 	"devDependencies": {
-		"@go-task/cli": "^3.34.1",
-		"@playwright/test": "^1.41.2",
-		"@typescript-eslint/eslint-plugin": "^7.0.2",
-		"@typescript-eslint/parser": "^7.0.2",
+		"@go-task/cli": "^3.35.0",
+		"@playwright/test": "^1.42.1",
+		"@typescript-eslint/eslint-plugin": "^7.1.0",
+		"@typescript-eslint/parser": "^7.1.0",
 		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^9.1.0",
 		"prettier": "^3.2.5",

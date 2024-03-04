@@ -2,7 +2,7 @@
 	"name": "@example/starter",
 	"private": true,
 	"devDependencies": {
-		"@types/node": "^20.11.20",
+		"@types/node": "^20.11.24",
 		"turbo": "^1.12.4",
 		"vite": "^5.1.4"
 	},
